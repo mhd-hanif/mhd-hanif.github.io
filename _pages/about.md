@@ -1,24 +1,33 @@
 ---
 permalink: /
-title: "Welcome :smile:"
+title: "Welcome 😀"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I’m currently a :smile: researcher focusing on robotics and autonomous systems, with a particular interest in coverage control and multi-robot systems. My work involves integrating angle-aware coverage control with real-time map reconstruction algorithms, aimed at optimizing UAV-based monitoring and 3D reconstruction.
+I am currently a PhD candidate in Systems and Control Engineering at [Tokyo Institute of Technology](https://www.titech.ac.jp/), advised by [Prof. Takeshi Hatanaka](https://hatanakalab.wixsite.com/website/faculty). My research focuses on coverage control and multi-robot systems, primarily using UAVs (Unmanned Aerial Vehicles) 🚁.
 
-I’ve previously worked on deep learning models for agricultural applications, particularly in adapting models for crop-specific detection, such as wheat head detection and rice ear detection. My research spans a range of topics from real-time feedback mechanisms in robotics to the intersection of AI and agricultural technologies.
+Before starting my PhD, I completed my Master's degree at [Tokyo Institute of Technology](https://www.titech.ac.jp/), where I worked on multi-robot task allocation problems using UAVs and UGVs (Unmanned Ground Vehicles) to address solar radiation monitoring in a thermosolar plant. This research was conducted in collaboration with the [University of Seville](https://www.us.es/), under the supervision of [Prof. J.M. Maestre](https://personal.us.es/jmaestre/).
 
-I completed my studies in Electrical and Computer Engineering, with a strong emphasis on robotics, AI, and computer vision. My academic journey has been shaped by my passion for exploring how intelligent systems can interact with the real world, especially in dynamic environments.
+Earlier, I earned my Bachelor's degree in Electrical Engineering from the [Bandung Institute of Technology](https://www.itb.ac.id/), Indonesia, where I worked on a Hybrid Autonomous Underwater Glider (HAUG) with [Prof. Bambang Riyanto](https://www.itb.ac.id/staff/view/bambang-riyanto-widyotriatmo-s-t-m-t-ph-d).
 
-You’ll find me working at the intersection of robotics, computer vision, and AI. My research goal is to advance the capabilities of autonomous systems, enabling them to perform complex tasks in uncertain environments. I believe in the potential of robots to revolutionize industries and improve our quality of life through automation and intelligent decision-making.
 
-When I’m not immersed in research, you’ll find me exploring new technologies or delving into the latest advancements in AI and robotics.
+**Latest News 🗞️**  
+======  
+- **April 2024:** Our paper *Efficient Angle-Aware Coverage Control for Large-Scale Map Reconstruction using Drone Networks* has been published in **SICE JCMSI**.
+- **November 2023:** I gave a presentation on collaborative 3D structure reconstruction using drone teams at the **SSS Global Forum 2023** in Tokyo, Japan.
+- **September 2023:** Our paper *Hierarchical Vessel Autonomous Operation in a Port with Safety Certificates: Combined MPC and CBF Approach* has been accepted for presentation at **IFAC 2023**.
+- **April 2023:** Our paper *Predictive Receding-Horizon Multi-Robot Task Allocation Applied to the Mapping of Direct Normal Irradiance in a Thermosolar Power Plant* has been published in the **Solar Energy** journal.
+- **November 2022:** I gave a talk on *Human-Collaborative Control of Drone Networks with Virtual Reality* at the **Wise SSS Matching Workshop 2022**.
+- **October 2022:** Thrilled to have started my PhD at the Tokyo Institute of Technology in **Hatanaka Laboratory**.
 
-Mentorship & Outreach :robot:
+
+Mentorship & Outreach 🛩️
 ======
-If you are a student interested in robotics or AI, feel free to reach out! I’m always happy to share my experiences, provide guidance, and discuss potential research opportunities. Robotics and AI are transforming the world, and it’s an exciting time to be involved in this field.
+If you’re a high school student interested in learning about robotics or begin exploring programming and engineering, feel free to contact me! I’m always glad to help with questions and offer guidance. Robotics is incredibly fascinating, especially when you see your code come to life 😀
 
-Please use LinkedIn for all professional & consulting inquiries.
+For all professional and consulting inquiries, please use [Linkedin](https://www.linkedin.com/in/muhammad-hanif-6189b0157/).
+
+
