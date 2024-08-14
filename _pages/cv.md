@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 <!-- <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div> -->
 
-You can also find my full CV <a href="http://hanifmania.github.io/files/cv.pdf">here</a>
+You can also <a href="http://hanifmania.github.io/files/cv.pdf">download my full CV here</a>
 
 Education
 ======
