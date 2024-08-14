@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,12 +8,15 @@ redirect_from:
 ---
 
 {% include base_path %}
+<!-- <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div> -->
+
+You can also find my full CV <a href="http://hanifmania.github.io/files/cv.pdf">here</a>
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Systems and Control Engineering, Tokyo Institute of Technology, 2025 (expected)
+* M.Eng. in Systems and Control Engineering, Tokyo Institute of Technology, 2022
+* B.S. in Electrical Engineering, Bandung Institute of Technology, 2018
 
 Work experience
 ======
