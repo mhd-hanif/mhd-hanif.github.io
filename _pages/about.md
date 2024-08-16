@@ -1,17 +1,19 @@
 ---
 permalink: /
-title: "Welcome 😀"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
+**Welcome 😀**  
+======  
 I am currently a PhD candidate in Systems and Control Engineering at [Tokyo Institute of Technology](https://www.titech.ac.jp/), advised by [Prof. Takeshi Hatanaka](https://hatanakalab.wixsite.com/website/faculty). My research focuses on coverage control and multi-robot systems, primarily using UAVs (Unmanned Aerial Vehicles) 🚁.
 
-Before starting my PhD, I completed my Master's degree at [Tokyo Institute of Technology](https://www.titech.ac.jp/), where I worked on multi-robot task allocation problems using UAVs and UGVs (Unmanned Ground Vehicles) to address solar radiation monitoring in a thermosolar plant. This research was conducted in collaboration with the [University of Seville](https://www.us.es/), under the supervision of [Prof. J.M. Maestre](https://personal.us.es/jmaestre/).
+Before starting my PhD, I completed my Master's degree at Tokyo Institute of Technology, where I worked on multi-robot task allocation problems using UAVs and UGVs (Unmanned Ground Vehicles) to address solar radiation monitoring in a thermosolar plant. This research was conducted in collaboration with the [University of Seville](https://www.us.es/), under the supervision of [Prof. J.M. Maestre](https://personal.us.es/jmaestre/).
 
-Earlier, I earned my Bachelor's degree in Electrical Engineering from the [Bandung Institute of Technology](https://www.itb.ac.id/), Indonesia, where I worked on a Hybrid Autonomous Underwater Glider (HAUG) with [Prof. Bambang Riyanto](https://www.itb.ac.id/staff/view/bambang-riyanto-widyotriatmo-s-t-m-t-ph-d).
+Earlier, I earned my Bachelor's degree in Electrical Engineering from the [Bandung Institute of Technology](https://www.itb.ac.id/), Indonesia, where I worked on a Hybrid Autonomous Underwater Glider (HAUG) with [Prof. Bambang Riyanto](https://scholar.google.co.jp/citations?user=Ik5Ft5EAAAAJ&hl).
 
 
 **Latest News 🗞️**  
