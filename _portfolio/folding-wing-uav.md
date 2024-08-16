@@ -1,6 +1,6 @@
 ---
 title: "Tube-Launched Folding-Wing UAV"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+excerpt: "Compact and easily deployable unmanned aircraft which can be launched from tube <br/><img src='/images/portf_folding_wing_1.gif'>"
 collection: portfolio
 ---
 
