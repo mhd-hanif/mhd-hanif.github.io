@@ -1,5 +1,5 @@
 ---
-title: "EL4125 - Digital Image Processing TA"
+title: "EL4125 - Digital Image Processing - Teaching Assistant"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2018-fall-image_processing

@@ -1,5 +1,5 @@
 ---
-title: "SCE.C451 - Optimal Control TA"
+title: "SCE.C451 - Optimal Control - Teaching Assistant"
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/2024-spring-optimal_control

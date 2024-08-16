@@ -1,5 +1,5 @@
 ---
-title: "Portfolio item number 1"
+title: "HALE (High-Altitude Long-Endurance) UAV"
 excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---

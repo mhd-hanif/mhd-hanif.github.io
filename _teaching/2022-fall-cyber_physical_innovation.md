@@ -1,5 +1,5 @@
 ---
-title: "SCE.Z401 - Cyber Physical Innovation TA"
+title: "SCE.Z401 - Cyber Physical Innovation - Teaching Assistant"
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/2022-fall-cyber_physical_innovation
