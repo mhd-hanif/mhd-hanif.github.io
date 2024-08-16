@@ -6,7 +6,7 @@ permalink: /publication/2024-journal-lu-et-al
 # excerpt: 'This paper is about fixing template issue #693.'
 date: 2024-01-01
 venue: 'SICE Journal of Control, Measurement, and System Integration'
-# paperurl: 'http://academicpages.github.io/files/paper3.pdf'
+paperurl: 'https://www.tandfonline.com/doi/epdf/10.1080/18824889.2024.2351637?needAccess=true'
 citation: 'Zhiyuan Lu, <u><b>Muhammad Hanif</b></u>, Takumi Shimizu, and Takeshi Hatanaka. (2024). "<b>Angle-Aware Coverage with Camera Rotational Motion Control.</b>" <i>SICE Journal of Control, Measurement, and System Integration</i> 17(1): 211–221.'
 ---
 

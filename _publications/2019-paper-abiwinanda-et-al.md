@@ -7,7 +7,7 @@ permalink: /publication/2019-paper-abiwinanda-et-al
 date: 2019-01-01
 venue: 'World Congress on Medical Physics and Biomedical Engineering 2018'
 # slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-# paperurl: 'http://academicpages.github.io/files/paper2.pdf'
+paperurl: 'https://www.researchgate.net/profile/Muhammad-Hanif-123/publication/325452559_Brain_Tumor_Classification_Using_Convolutional_Neural_Network/links/64ed6b766581d611d31bb928/Brain-Tumor-Classification-Using-Convolutional-Neural-Network.pdf'
 citation: 'Abiwinanda, Nyoman, <u><b>Muhammad Hanif</b></u>, S. Tafwida Hesaputra, Astri Handayani, and Tati Rajab Mengko. (2019). "<b>Brain tumor classification using convolutional neural network.</b>" In <i>World Congress on Medical Physics and Biomedical Engineering 2018: June 3-8, 2018, Prague, Czech Republic (Vol. 1)</i>, pp. 183-189. Springer Singapore.'
 ---
 

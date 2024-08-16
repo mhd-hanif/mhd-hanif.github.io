@@ -20,7 +20,7 @@ Earlier, I earned my Bachelor's degree in Electrical Engineering from the [Bandu
 ======  
 - **April 2024:** Our paper *Efficient Angle-Aware Coverage Control for Large-Scale Map Reconstruction using Drone Networks* has been published in **SICE JCMSI**.
 - **November 2023:** I gave a presentation on collaborative 3D structure reconstruction using drone teams at the **SSS Global Forum 2023** in Tokyo, Japan.
-- **September 2023:** Our paper *Hierarchical Vessel Autonomous Operation in a Port with Safety Certificates: Combined MPC and CBF Approach* has been accepted for presentation at **IFAC 2023**.
+- **September 2023:** Our paper *Hierarchical Vessel Autonomous Operation in a Port with Safety Certificates: Combined MPC and CBF Approach* has been accepted for presentation at **IFAC World Congress 2023**.
 - **April 2023:** Our paper *Predictive Receding-Horizon Multi-Robot Task Allocation Applied to the Mapping of Direct Normal Irradiance in a Thermosolar Power Plant* has been published in the **Solar Energy** journal.
 - **November 2022:** I gave a talk on *Human-Collaborative Control of Drone Networks with Virtual Reality* at the **Wise SSS Matching Workshop 2022**.
 - **October 2022:** Thrilled to have started my PhD at the Tokyo Institute of Technology in **Hatanaka Laboratory**.

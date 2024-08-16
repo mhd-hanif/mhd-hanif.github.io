@@ -7,7 +7,7 @@ permalink: /publication/2023-paper-otsuki-et-al
 date: 2023-01-01
 venue: 'IFAC-PapersOnLine'
 # slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-# paperurl: 'http://academicpages.github.io/files/paper2.pdf'
+paperurl: 'https://www.sciencedirect.com/science/article/pii/S2405896323018554'
 citation: 'Otsuki, Satoshi, Naoki Hatta, <u><b>Muhammad Hanif</b></u>, Takeshi Hatanaka, and Kenichi Nakashima. (2023). "<b>Hierarchical Vessel Autonomous Operation in a Port with Safety Certificates: Combined MPC and CBF Approach.</b>" In <i>IFAC-PapersOnLine</i> 56(2): 3138-3145.'
 ---
 

@@ -7,7 +7,7 @@ permalink: /publication/2024-paper-lu-et-al
 date: 2024-01-01
 venue: 'SICE Annual Conference'
 # slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-# paperurl: 'http://academicpages.github.io/files/paper2.pdf'
+# paperurl: 'https://www.tandfonline.com/doi/epdf/10.1080/18824889.2024.2351637?needAccess=true'
 citation: 'Lu, Zhiyuan, <u><b>Muhammad Hanif</b></u>, and Takeshi Hatanaka. (2024). "<b>Angle-Aware Full 3D Coverage Control with ADMM-based Dynamic Assignment of Charging Stations.</b>" <i>SICE Annual Conference</i>, to be presented.'
 ---
 

@@ -7,7 +7,7 @@ permalink: /publication/2022-paper-martin-et-al
 date: 2022-01-01
 venue: '2022 European Control Conference (ECC)'
 # slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-# paperurl: 'http://academicpages.github.io/files/paper2.pdf'
+paperurl: 'https://ieeexplore.ieee.org/abstract/document/9838127'
 citation: 'Martin, Javier G., <u><b>Muhammad Hanif</b></u>, Takeshi Hatanaka, Jose M. Maestre, and Eduardo F. Camacho. (2022). "<b>Predictive receding-horizon multi-robot task allocation with moving tasks.</b>" In <i>2022 European Control Conference (ECC)</i>, pp. 2030-2035. IEEE.'
 ---
 
