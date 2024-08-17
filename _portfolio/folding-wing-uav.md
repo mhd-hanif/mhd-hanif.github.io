@@ -8,6 +8,8 @@ This project was undertaken as part of the Indonesia National Aerial Robotics Co
 
 Our aim was to develop a fixed-wing UAV that is compact, easily deployable, and optimized for operations in challenging terrains. To achieve this, we designed the UAV to be rapidly deployable within a short time frame. It is stored in a tube for easy transport, allowing for the simultaneous launch of multiple aircraft without the need for a runway. Additionally, we also worked on developing a coordinated relay system to enable the control of multiple UAVs and extend the communication range.
 
+<br/><img src='/images/portf_folding_wing_5.jpg'>
+
 ## The Challenge
 
 ### Issues with Conventional Fixed-Wing UAVs:
@@ -21,6 +23,7 @@ To address these challenges, our team developed a tube-launched folding-wing UAV
 
 <br/><img src='/images/portf_folding_wing_2.png'>
 <br/><img src='/images/portf_folding_wing_3.png'>
+<br/><img src='/images/portf_folding_wing_4.mp4'>
 
 
 
