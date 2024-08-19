@@ -1,6 +1,7 @@
 ---
 title: "Hybrid Vertical Take Off Landing UAV"
-excerpt: "Hybrid fixed-wing UAV with vertical take-off and landing capability <br/><img src='/images/portf_hvtol_3.gif' style='width:400px;height:auto;'>"
+excerpt: "<div style='max-width: 500px;'> Hybrid fixed-wing UAV with vertical take-off and landing capability. <br/><img src='/images/portf_hvtol_3.gif' style='width:500px;height:auto;border: 2px solid black;'>"
+<div style='text-align: center;'>
 collection: portfolio
 ---
 
@@ -20,3 +21,7 @@ Our approach combines the best of both worlds by developing a Hybrid VTOL UAV, n
   <img src='/images/portf_hvtol_1.png' alt="Hybrid VTOL UAV"/>
   <img src='/images/portf_hvtol_2.png' alt="Hybrid VTOL UAV"/>
 </p>
+
+**Video** - A video demonstration of the UAV development : 
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/r8ZrAt5JXMc" title="KRTI 2016 Laporan Video Evaluasi Tahap 2   TD Gatotkaca Ganesha Institut Teknologi Bandung" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
