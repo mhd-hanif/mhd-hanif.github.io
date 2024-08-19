@@ -1,6 +1,6 @@
 ---
 title: "Hybrid Vertical Take Off Landing UAV"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+excerpt: "Hybrid fixed-wing UAV with vertical take-off and landing capability <br/><img src='/images/portf_hvtol_3.gif' style='width:400px;height:auto;'>"
 collection: portfolio
 ---
 
@@ -17,6 +17,6 @@ Aircraft generally fall into two categories:
 Our approach combines the best of both worlds by developing a Hybrid VTOL UAV, named Gatotkaca Ganesha. This unmanned aircraft can take off and land in a small area using its quadcopter mode. After reaching the desired altitude, it transitions to fixed-wing mode for efficient cruising. This design is ideal for use cases such as delivering medical and emergency supplies to disaster-affected areas (e.g., earthquakes), urban logistics, or monitoring forests in hilly or mountainous regions.
 
 <p align="center">
-  <img src='/images/portf_hvtol_1.jpg' alt="Hybrid VTOL UAV"/>
-  <img src='/images/portf_hvtol_2.jpg' alt="Hybrid VTOL UAV"/>
+  <img src='/images/portf_hvtol_1.png' alt="Hybrid VTOL UAV"/>
+  <img src='/images/portf_hvtol_2.png' alt="Hybrid VTOL UAV"/>
 </p>
