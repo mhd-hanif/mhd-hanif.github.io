@@ -7,7 +7,7 @@ permalink: /publication/2024-paper-hanif-et-al
 date: 2024-01-01
 venue: 'SICE Annual Conference'
 # slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-# paperurl: 'http://academicpages.github.io/files/paper2.pdf'
+paperurl: 'https://drive.google.com/viewerng/viewer?url=https://paperhost.org/proceedings/controls/SICE24/files/0252.pdf'
 citation: '<u><b>Muhammad Hanif</b></u> and Takeshi Hatanaka. (2024). "<b>Real-time Adaptation of Drone Altitude and Object Detection Model for Moving Target Tracking.</b>" <i>SICE Annual Conference</i>, to be presented.'
 ---
 

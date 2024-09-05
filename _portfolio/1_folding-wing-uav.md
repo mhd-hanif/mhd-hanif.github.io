@@ -1,5 +1,5 @@
 ---
-title: "Tube-Launched Folding-Wing UAV"
+title: "<br/><img src='/images/portf_folding_wing_1.gif' style='width:500px;height:auto;border: 2px solid black;'>Tube-Launched Folding-Wing UAV"
 excerpt: "<div style='max-width: 500px;'>Compact and easily deployable fixed-wing unmanned aerial vehicle which can be launched from tube. <br/><img src='/images/portf_folding_wing_1.gif' style='width:500px;height:auto;border: 2px solid black;'></div>"
 collection: portfolio
 ---

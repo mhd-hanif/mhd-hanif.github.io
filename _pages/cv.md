@@ -10,13 +10,13 @@ redirect_from:
 {% include base_path %}
 <!-- <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div> -->
 
-You can also <a href="http://hanifmania.github.io/files/cv.pdf">download my full CV here</a>
+You can <a href="http://mhd-hanif.github.io/files/CV_Hanif.pdf">download my full CV here</a>
 
-Education
+<!-- Education
 ======
 * Ph.D in Systems and Control Engineering, Tokyo Institute of Technology, 2025 (expected)
 * M.Eng. in Systems and Control Engineering, Tokyo Institute of Technology, 2022
-* B.S. in Electrical Engineering, Bandung Institute of Technology, 2018
+* B.Sc. in Electrical Engineering, Bandung Institute of Technology, 2018
 
 Work experience
 ======
@@ -64,4 +64,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
