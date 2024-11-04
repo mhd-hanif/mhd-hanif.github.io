@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Impact of Real-time Map Feedback on Coordinated Image Sampling for 3D Reconstruction">
+  <meta name="keywords" content="3D Reconstruction, Real-time Map Feedback, Coverage Control, NeuralRecon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Real-time Map Feedback for Coordinated Image Sampling</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <!-- Three.js and PLY Loader -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://threejs.org/examples/js/loaders/PLYLoader.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="#">
+        <span class="icon">
+          <i class="fas fa-home"></i>
+        </span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Impact of Real-time Map Feedback on Coordinated Image Sampling for 3D Reconstruction</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" style="color: blue;">Muhammad Hanif<sup>1</sup>, Takumi Sumino<sup>1</sup>, Kuniaki Uto<sup>2</sup>, Daisuke Ichihashi<sup>3</sup>, Kelvin Cheng<sup>3</sup>, Takeshi Hatanaka<sup>1</sup></span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Institute of Science Tokyo, </span>
+            <span class="author-block"><sup>2</sup>Wise SSS Tokyo Tech, </span>
+            <span class="author-block"><sup>3</sup>Rakuten Mobile Inc.</span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-video"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Efficient image sampling from diverse viewing angles is crucial for high-quality 3D map reconstruction, and coverage control provides a promising solution to this mission. Moreover, with the recent advancements in real-time 3D reconstruction algorithms, it is now possible to iteratively reconstruct 3D maps in real time, providing immediate map feedback to robot motion control. In this paper, we propose a novel coordinated image sampling algorithm that leverages real-time map feedback to enhance the quality of the reconstructed 3D model.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/ZhDbBBvplhY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen width="100%" height="315"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">3D Model Viewer</h2>
+        <div id="3d-model-container" style="width: 100%; height: 315px; background-color: #eeeeee;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{hanif2024realtime,
+  author = {Muhammad Hanif and Takumi Sumino and Kuniaki Uto and Daisuke Ichihashi and Kelvin Cheng and Takeshi Hatanaka},
+  title = {Impact of Real-time Map Feedback on Coordinated Image Sampling for 3D Reconstruction},
+  journal = {ECC},
+  year = {2024}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="#">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Three.js Script to Load .ply Model -->
+<script>
+  // Basic Three.js scene setup
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 315, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer();
+  renderer.setSize(window.innerWidth * 0.8, 315); // Match the video's width and height
+  document.getElementById('3d-model-container').appendChild(renderer.domElement);
+
+  // Add lighting for visibility
+  const light = new THREE.DirectionalLight(0xffffff, 1);
+  light.position.set(1, 1, 1).normalize();
+  scene.add(light);
+
+  // Load the .ply model
+  const loader = new THREE.PLYLoader();
+  loader.load('C:/Users/mhani/Documents/mfadcc/mfadcc/static/ply/ExportedMesh.ply', function (geometry) {
+    geometry.computeVertexNormals();
+    const material = new THREE.MeshStandardMaterial({ color: 0x0055ff, flatShading: true });
+    const mesh = new THREE.Mesh(geometry, material);
+    scene.add(mesh);
+    camera.position.z = 1.5;
+
+    // Animation loop
+    function animate() {
+      requestAnimationFrame(animate);
+      mesh.rotation.y += 0.01; // Rotate for interaction
+      renderer.render(scene, camera);
+    }
+    animate();
+  });
+
+  // Resize renderer on window resize
+  window.addEventListener('resize', () => {
+    renderer.setSize(window.innerWidth * 0.8, 315); // Adjust size dynamically
+    camera.aspect = window.innerWidth / 315;
+    camera.updateProjectionMatrix();
+  });
+</script>
+
+</body>
+</html>
