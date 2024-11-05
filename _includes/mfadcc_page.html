@@ -138,10 +138,14 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
 
+<!-- Separate Section for Video -->
+<section class="section">
+  <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
         <div class="publication-video">
           <iframe 
             src="https://www.youtube.com/embed/ZhDbBBvplhY?autoplay=1&loop=1&playlist=ZhDbBBvplhY" 
@@ -149,19 +153,50 @@
             allow="autoplay; encrypted-media" 
             allowfullscreen 
             width="100%" 
-            height="350">
+            height="450">
           </iframe>
         </div>
+        <!-- Text below the video -->
+        <p style="font-size: 14px; color: #4A4A4A; margin-top: 15px; text-align: center;">
+          Real-time map-feedback coverage control by Unmanned Aerial Vehicles (UAVs), integrating angle-aware coverage control with real-time map feedback from 
+          <a href="https://zju3dv.github.io/neuralrecon/" target="_blank" rel="noopener noreferrer" style="color: #1CAAD9; font-weight: bold;">NeuralRecon</a>.
+        </p>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">3D Model Viewer</h2>
-        <div id="3d-model-container" style="width: 100%; height: 315px; background-color: #eeeeee;"></div>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Title for the Diagrams Section -->
+    <h2 class="title is-3 has-text-centered">Illustrations of Key Concepts</h2>
+    
+    <div class="columns is-centered is-vcentered">
+      
+      <!-- Angle-Aware Coverage Control Diagram -->
+      <div class="column is-half has-text-centered">
+        <figure>
+          <img src="./static/images/drone_virtual_field.png" alt="Angle-Aware Coverage Control" style="width:100%; height:300px; object-fit: contain;">
+          <figcaption style="font-size: 14px; font-weight: bold; margin-top: 10px;">Angle-Aware Coverage Control</figcaption>
+        </figure>
+        <p style="font-size: 14px; color: #4A4A4A; margin-top: 10px; text-align: justify;">
+          Drones capture images from diverse angles to enhance 3D reconstruction coverage.
+        </p>
       </div>
+
+      <!-- Real-Time Map Feedback with NeuralRecon Diagram -->
+      <div class="column is-half has-text-centered">
+        <figure>
+          <img src="./static/images/controller_scheme_short.png" alt="Real-Time Map Feedback from NeuralRecon" style="width:100%; height:300px; object-fit: contain;">
+          <figcaption style="font-size: 14px; font-weight: bold; margin-top: 10px;">Real-Time Map Feedback from NeuralRecon</figcaption>
+        </figure>
+        <p style="font-size: 14px; color: #4A4A4A; margin-top: 10px; text-align: justify;">
+          NeuralRecon processes images in real time, providing feedback that guides drone movement.
+        </p>
+      </div>
+      
     </div>
-  </div> -->
+  </div>
 </section>
 
 <section class="section">
