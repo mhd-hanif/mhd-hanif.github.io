@@ -7,17 +7,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Real-time Map Feedback for Coordinated Image Sampling</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
   <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
-  <!-- Three.js and PLY Loader -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://threejs.org/examples/js/loaders/PLYLoader.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
 <body>
 
@@ -72,7 +92,7 @@
             <div class="publication-links">
               <!-- PDF Link -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
                   </span>
@@ -81,7 +101,7 @@
               </span>
               <!-- arXiv Link -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
@@ -90,7 +110,7 @@
               </span>
               <!-- Video Link -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://www.youtube.com/watch?v=ZhDbBBvplhY" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fab fa-youtube"></i>
                   </span>
@@ -113,7 +133,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Efficient image sampling from diverse viewing angles is crucial for high-quality 3D map reconstruction, and coverage control provides a promising solution to this mission. Moreover, with the recent advancements in real-time 3D reconstruction algorithms, it is now possible to iteratively reconstruct 3D maps in real time, providing immediate map feedback to robot motion control. In this paper, we propose a novel coordinated image sampling algorithm that leverages real-time map feedback to enhance the quality of the reconstructed 3D model.
+            Efficient image sampling from diverse viewing angles is crucial for high-quality 3D map reconstruction, and coverage control provides a promising solution to this mission. Moreover, with the recent advancements in real-time 3D reconstruction algorithms, it is now possible to iteratively reconstruct 3D maps in real time, providing immediate map feedback to robot motion control. In this paper, we propose a novel coordinated image sampling algorithm that leverages real-time map feedback to enhance the quality of the reconstructed 3D model. We first formulate the problem as an angle-aware coverage control problem, where images are captured from multiple angles across the field of interest by drones. These images are processed in real time by so-called NeuralRecon to generate an evolving 3D mesh of the environment. Mesh changes across the field serve as feedback to update the importance index of the coverage control as the map evolves. We then design a QP-based controller to certify a sampling performance by constraining the decay rate of the objective function. Simulations in Unity and ROS2 demonstrate that our feedback-driven approach outperforms the conventional method without map feedback, resulting in a more complete and accurate 3D map.
           </p>
         </div>
       </div>
@@ -123,16 +143,70 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/ZhDbBBvplhY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen width="100%" height="315"></iframe>
+          <iframe 
+            src="https://www.youtube.com/embed/ZhDbBBvplhY?autoplay=1&loop=1&playlist=ZhDbBBvplhY" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen 
+            width="100%" 
+            height="350">
+          </iframe>
         </div>
       </div>
     </div>
 
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">3D Model Viewer</h2>
         <div id="3d-model-container" style="width: 100%; height: 315px; background-color: #eeeeee;"></div>
       </div>
+    </div>
+  </div> -->
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Single Title for all models -->
+    <h2 class="title is-3 has-text-centered">Comparison of Reconstructed Mesh</h2>
+    
+    <div class="columns is-centered has-text-centered">
+      
+      <!-- First 3D Model -->
+      <div class="column">
+        <div class="sketchfab-embed-wrapper">
+          <iframe title="Exported Mesh" frameborder="0" allowfullscreen mozallowfullscreen="true" 
+                  webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" 
+                  src="https://sketchfab.com/models/e15145058d574b4a920c7412fe79377b/embed?autospin=1&autostart=1&ui_theme=dark"
+                  width="100%" height="480">
+          </iframe>
+          <p style="font-size: 14px; font-weight: bold; margin: 10px 0; color: #4A4A4A;">Ground Truth</p>
+        </div>
+      </div>
+
+      <!-- Second 3D Model -->
+      <div class="column">
+        <div class="sketchfab-embed-wrapper">
+          <iframe title="Neural_recon" frameborder="0" allowfullscreen mozallowfullscreen="true" 
+                  webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" 
+                  src="https://sketchfab.com/models/16d87e8fca054c99be51c660868db95a/embed?autospin=1&autostart=1&ui_theme=dark"
+                  width="100%" height="480">
+          </iframe>
+          <p style="font-size: 14px; font-weight: bold; margin: 10px 0; color: #4A4A4A;">With Mesh Feedback</p>
+        </div>
+      </div>
+
+      <!-- Third 3D Model -->
+      <div class="column">
+        <div class="sketchfab-embed-wrapper">
+          <iframe title="Mesh_60" frameborder="0" allowfullscreen mozallowfullscreen="true" 
+                  webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" 
+                  src="https://sketchfab.com/models/38d5d3971fcd4b4792e706ddb77726bb/embed?autospin=1&autostart=1&ui_theme=dark"
+                  width="100%" height="480">
+          </iframe>
+          <p style="font-size: 14px; font-weight: bold; margin: 10px 0; color: #4A4A4A;">Without Mesh Feedback</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -149,7 +223,7 @@
   </div>
 </section>
 
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link" href="#">
@@ -157,7 +231,23 @@
       </a>
     </div>
   </div>
+</footer> -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        This website is licensed under a 
+        <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      <p>
+        This webpage template is from <a href="https://nerfies.github.io" target="_blank" rel="noopener noreferrer">Nerfies</a>. 
+        We sincerely thank <a href="https://keunhong.com" target="_blank" rel="noopener noreferrer">Keunhong Park</a> for developing and open-sourcing this template.
+      </p>
+    </div>
+  </div>
 </footer>
+
 
 <!-- Three.js Script to Load .ply Model -->
 <script>
