@@ -91,23 +91,23 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
+              </span> -->
               <!-- arXiv Link -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Video Link -->
               <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=ZhDbBBvplhY" class="external-link button is-normal is-rounded is-dark">
@@ -246,7 +246,7 @@
   </div>
 </section>
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{hanif2024realtime,
@@ -256,7 +256,7 @@
   year = {2024}
 }</code></pre>
   </div>
-</section>
+</section> -->
 
 <!-- <footer class="footer">
   <div class="container">
@@ -282,47 +282,6 @@
     </div>
   </div>
 </footer>
-
-
-<!-- Three.js Script to Load .ply Model -->
-<script>
-  // Basic Three.js scene setup
-  const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 315, 0.1, 1000);
-  const renderer = new THREE.WebGLRenderer();
-  renderer.setSize(window.innerWidth * 0.8, 315); // Match the video's width and height
-  document.getElementById('3d-model-container').appendChild(renderer.domElement);
-
-  // Add lighting for visibility
-  const light = new THREE.DirectionalLight(0xffffff, 1);
-  light.position.set(1, 1, 1).normalize();
-  scene.add(light);
-
-  // Load the .ply model
-  const loader = new THREE.PLYLoader();
-  loader.load('C:/Users/mhani/Documents/mfadcc/mfadcc/static/ply/ExportedMesh.ply', function (geometry) {
-    geometry.computeVertexNormals();
-    const material = new THREE.MeshStandardMaterial({ color: 0x0055ff, flatShading: true });
-    const mesh = new THREE.Mesh(geometry, material);
-    scene.add(mesh);
-    camera.position.z = 1.5;
-
-    // Animation loop
-    function animate() {
-      requestAnimationFrame(animate);
-      mesh.rotation.y += 0.01; // Rotate for interaction
-      renderer.render(scene, camera);
-    }
-    animate();
-  });
-
-  // Resize renderer on window resize
-  window.addEventListener('resize', () => {
-    renderer.setSize(window.innerWidth * 0.8, 315); // Adjust size dynamically
-    camera.aspect = window.innerWidth / 315;
-    camera.updateProjectionMatrix();
-  });
-</script>
 
 </body>
 </html>
