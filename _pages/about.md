@@ -18,6 +18,7 @@ Earlier, I earned my Bachelor's degree in Electrical Engineering from the [Bandu
 
 **Latest News 🗞️**  
 ======  
+- **March 2025:** Our paper *Impact of Real-time Map Feedback on Coordinated Image Sampling for 3D Reconstruction* and *Hierarchical Multi-Robot Data Sampling for Environmental State Estimation through Online Gaussian Process* has been accepted for presentation in **European Control Conference 2025**.
 - **August 2024:** Our paper *Real-time Adaptation of Drone Altitude and Object Detection Model for Moving Target Tracking* has been presented in the **SICE Festival 2024**, Kochi, Japan.
 - **April 2024:** Our paper *Efficient Angle-Aware Coverage Control for Large-Scale Map Reconstruction using Drone Networks* has been published in **SICE JCMSI**.
 - **November 2023:** I gave a presentation on collaborative 3D structure reconstruction using drone teams at the **SSS Global Forum 2023** in Tokyo, Japan.
