@@ -71,6 +71,10 @@ exclude:
   - LICENSE
   - vendor
   - node_modules
+  # repo documentation and tooling -- not part of the published site
+  - CONTENT.md
+  - docs
+  - tools
 keep_files:
   - .git
 
