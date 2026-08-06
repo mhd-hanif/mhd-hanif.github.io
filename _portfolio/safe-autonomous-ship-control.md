@@ -5,6 +5,7 @@ permalink: /portfolio/safe-autonomous-ship-control/
 order: 4
 summary: "Hierarchical control for autonomous vessels manoeuvring inside a port, combining model predictive control with control barrier function safety certificates."
 teaser: "/images/portf_ship_1.gif"
+motion: "/images/motion/portf_ship_1.webp"
 thumb: "/images/thumbs/portf_ship_1.jpg"
 period: "2022 – 2024"
 collaborator: "Kawasaki Heavy Industries"

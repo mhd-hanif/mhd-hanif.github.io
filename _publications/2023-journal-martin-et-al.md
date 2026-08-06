@@ -10,6 +10,7 @@ venue: "Solar Energy, 2023"
 venueshort: "Solar Energy"
 authors: "Javier G. Martin, <span class=\"me\">Muhammad Hanif</span>, Takeshi Hatanaka, Jose M. Maestre, Eduardo F. Camacho"
 teaser: "/images/portf_la_africana_1.gif"
+motion: "/images/motion/portf_la_africana_1.webp"
 thumb: "/images/thumbs/portf_la_africana_1.jpg"
 paperurl: "https://www.sciencedirect.com/science/article/abs/pii/S0038092X23005443"
 featured: true

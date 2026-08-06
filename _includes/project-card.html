@@ -3,7 +3,14 @@
   <div class="project-media">
     {% assign card_img = item.thumb | default: item.teaser %}
     {% if card_img %}
+      {% if item.motion %}
+      <picture>
+        <source srcset="{{ item.motion | relative_url }}" type="image/webp" media="(prefers-reduced-motion: no-preference)">
+        <img src="{{ card_img | relative_url }}" alt="{{ item.title | strip_html | escape }}" loading="lazy" decoding="async">
+      </picture>
+      {% else %}
       <img src="{{ card_img | relative_url }}" alt="{{ item.title | strip_html | escape }}" loading="lazy" decoding="async">
+      {% endif %}
     {% else %}
       <span class="project-media-fallback" aria-hidden="true">{{ item.title | slice: 0, 1 }}</span>
     {% endif %}

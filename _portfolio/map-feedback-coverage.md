@@ -5,6 +5,7 @@ permalink: /portfolio/map-feedback-coverage/
 order: 1
 summary: "Coverage control for drone networks that feeds an evolving 3D mesh back into the controller, so the fleet flies where the reconstruction still needs data."
 teaser: "/images/portf_mfc_1.gif"
+motion: "/images/motion/portf_mfc_1.webp"
 thumb: "/images/thumbs/portf_mfc_1.jpg"
 period: "2023 – 2025"
 tags:

@@ -11,6 +11,7 @@ venueshort: "SICE"
 authors: "<span class=\"me\">Muhammad Hanif</span>, Takeshi Hatanaka"
 note: "pp. 533–538."
 teaser: "/images/portf_target_tracking_1.gif"
+motion: "/images/motion/portf_target_tracking_1.webp"
 thumb: "/images/thumbs/portf_target_tracking_1.jpg"
 paperurl: "https://paperhost.org/proceedings/controls/SICE24/files/0252.pdf"
 featured: true

@@ -523,13 +523,34 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.25; font-weight: 600; }
 
 /* Affiliations ----------------------------------------------------------- */
 
+/* All affiliations sit on a single row. Below the width where five tiles stay
+   legible, the row becomes a horizontal scroll strip rather than wrapping. */
 .affiliations {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
+}
+
+@media (max-width: 760px) {
+  .affiliations {
+    display: flex;
+    grid-template-columns: none;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+    /* let tiles run to the screen edge so the strip reads as scrollable */
+    margin-inline: -22px;
+    padding-inline: 22px;
+  }
+  .affiliation {
+    flex: 0 0 150px;
+    scroll-snap-align: start;
+  }
 }
 .affiliation > a,
 .affiliation-inner {
@@ -666,6 +687,7 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.25; font-weight: 600; }
   border-radius: var(--radius);
   background: var(--bg-sunken);
 }
+.pub-media picture { display: contents; }
 .pub-media img { width: 100%; height: 100%; object-fit: cover; }
 .pub-media-fallback {
   display: grid;
@@ -872,6 +894,7 @@ a.badge:hover { background: var(--accent); color: #fff; text-decoration: none; b
   background: var(--bg-sunken);
   border-bottom: 1px solid var(--border);
 }
+.project-media picture { display: contents; }
 .project-media img { width: 100%; height: 100%; object-fit: cover; }
 .project-media-fallback {
   display: grid;

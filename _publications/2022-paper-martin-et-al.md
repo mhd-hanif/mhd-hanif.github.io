@@ -11,6 +11,7 @@ venueshort: "ECC"
 authors: "Javier G. Martin, <span class=\"me\">Muhammad Hanif</span>, Takeshi Hatanaka, Jose M. Maestre, Eduardo F. Camacho"
 note: "pp. 2030–2035."
 teaser: "/images/portf_la_africana_1.gif"
+motion: "/images/motion/portf_la_africana_1.webp"
 thumb: "/images/thumbs/portf_la_africana_1.jpg"
 paperurl: "https://ieeexplore.ieee.org/abstract/document/9838127"
 bibtex: |

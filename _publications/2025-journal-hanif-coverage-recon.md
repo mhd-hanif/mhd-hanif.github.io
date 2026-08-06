@@ -11,6 +11,7 @@ venueshort: "IEEE T-CST"
 authors: "<span class=\"me\">Muhammad Hanif</span>, Takumi Sumino, Kuniaki Uto, Daisuke Ichihashi, Kelvin Cheng, Takeshi Hatanaka"
 status: "Under review"
 teaser: "/images/portf_mfc_1.gif"
+motion: "/images/motion/portf_mfc_1.webp"
 thumb: "/images/thumbs/portf_mfc_1.jpg"
 video: "https://www.youtube.com/watch?v=ZhDbBBvplhY"
 featured: true

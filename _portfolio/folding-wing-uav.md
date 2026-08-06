@@ -5,6 +5,7 @@ permalink: /portfolio/folding-wing-uav/
 order: 13
 summary: "A compact fixed-wing UAV that stows in a tube and deploys without a runway, with a coordinated relay system to extend communication range. Best Design, Indonesia Aerial Robotics Competition 2017."
 teaser: "/images/portf_folding_wing_0.gif"
+motion: "/images/motion/portf_folding_wing_0.webp"
 thumb: "/images/thumbs/portf_folding_wing_0.jpg"
 period: "2015 – 2017"
 tags:

@@ -11,5 +11,6 @@ venueshort: "Ph.D."
 authors: "<span class=\"me\">Muhammad Hanif</span>"
 note: "Department of Systems and Control Engineering. Advisor: Prof. Takeshi Hatanaka."
 teaser: "/images/portf_uaacc_1.gif"
+motion: "/images/motion/portf_uaacc_1.webp"
 thumb: "/images/thumbs/portf_uaacc_1.jpg"
 ---

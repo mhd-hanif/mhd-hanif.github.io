@@ -5,6 +5,7 @@ permalink: /portfolio/hybrid-vtol-uav/
 order: 14
 summary: "A fixed-wing UAV that takes off and lands vertically like a multicopter, pairing rotary-wing manoeuvrability with fixed-wing endurance. 1st Runner-Up, Indonesia Aerial Robotics Competition 2016."
 teaser: "/images/portf_hvtol_3.gif"
+motion: "/images/motion/portf_hvtol_3.webp"
 thumb: "/images/thumbs/portf_hvtol_3.jpg"
 period: "2015 – 2017"
 tags:

@@ -5,6 +5,7 @@ permalink: /portfolio/drone-target-tracking/
 order: 3
 summary: "Adapting a drone's altitude and its object-detection model in real time, so detection accuracy and field of view stay matched to how the target is moving."
 teaser: "/images/portf_target_tracking_1.gif"
+motion: "/images/motion/portf_target_tracking_1.webp"
 thumb: "/images/thumbs/portf_target_tracking_1.jpg"
 period: "2023 – 2024"
 collaborator: "Fujitsu"

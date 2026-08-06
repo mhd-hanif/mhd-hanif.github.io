@@ -11,6 +11,7 @@ venueshort: "IFAC WC"
 authors: "Satoshi Otsuki, Naoki Hatta, <span class=\"me\">Muhammad Hanif</span>, Takeshi Hatanaka, Kenichi Nakashima"
 note: "IFAC-PapersOnLine 56(2), pp. 3138–3145."
 teaser: "/images/portf_ship_1.gif"
+motion: "/images/motion/portf_ship_1.webp"
 thumb: "/images/thumbs/portf_ship_1.jpg"
 paperurl: "https://www.sciencedirect.com/science/article/pii/S2405896323018554"
 bibtex: |

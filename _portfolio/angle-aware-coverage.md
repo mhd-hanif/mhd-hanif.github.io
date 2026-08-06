@@ -5,6 +5,7 @@ permalink: /portfolio/angle-aware-coverage/
 order: 2
 summary: "A Voronoi-based nominal input inside the angle-aware coverage QP, keeping viewing angles diverse across large reconstruction areas. Validated in ROS and on a physical testbed."
 teaser: "/images/portf_uaacc_1.gif"
+motion: "/images/motion/portf_uaacc_1.webp"
 thumb: "/images/thumbs/portf_uaacc_1.jpg"
 period: "2022 – 2024"
 tags:
