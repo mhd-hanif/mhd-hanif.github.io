@@ -1,33 +1,34 @@
 # Research topics and technical skills, shown as one section under About.
+# Labels are title-cased; acronyms and product names keep their own casing.
 
-- label: "Research topics"
+- label: "Research Topics"
   items:
-    - "Multi-robot systems"
-    - "Coverage control"
-    - "Multi-robot task allocation"
-    - "Safety-critical control"
-    - "3D reconstruction"
-    - "Computer vision"
+    - "Multi-Robot Systems"
+    - "Coverage Control"
+    - "Multi-Robot Task Allocation"
+    - "Safety-Critical Control"
+    - "3D Reconstruction"
+    - "Computer Vision"
 
-- label: "Robot platforms"
+- label: "Robot Platforms"
   items:
-    - "Multirotor & fixed-wing UAVs"
+    - "Multirotor & Fixed-Wing UAVs"
     - "Hybrid VTOL"
     - "UGVs"
-    - "Underwater gliders & AUVs"
-    - "Autonomous vessels"
-    - "Construction machinery"
+    - "Underwater Gliders & AUVs"
+    - "Autonomous Vessels"
+    - "Construction Machinery"
 
 - label: "Methods"
   items:
-    - "Model predictive control"
-    - "Control barrier functions"
-    - "Distributed optimisation"
-    - "Path planning"
+    - "Model Predictive Control"
+    - "Control Barrier Functions"
+    - "Distributed Optimisation"
+    - "Path Planning"
     - "NeRF"
-    - "3D Gaussian splatting"
+    - "3D Gaussian Splatting"
     - "Photogrammetry"
-    - "Object detection"
+    - "Object Detection"
 
 - label: "Frameworks"
   items:

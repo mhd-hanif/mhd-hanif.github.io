@@ -360,6 +360,13 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.25; font-weight: 600; }
 }
 .social-links svg { width: 14px; height: 14px; flex: 0 0 auto; }
 
+.hero-updated {
+  margin: 14px 0 0;
+  color: var(--text-faint);
+  font-size: .775rem;
+  letter-spacing: .01em;
+}
+
 /* =========================================================================
    Sections
    ========================================================================= */

@@ -18,7 +18,7 @@
   text: >-
     Started as a <strong>Robotics Control Engineer</strong> at
     <a href="https://deepx.co.jp/" target="_blank" rel="noopener">DeepX, Inc.</a> in Tokyo,
-    working on coordinated planning for autonomous excavation with multiple autonomous shovels.
+    working on autonomous construction machinery.
 
 - date: "Sep 2025"
   text: >-
@@ -51,10 +51,6 @@
     Joined <strong>FBTriangle</strong> as a simulation software engineer intern, developing a
     coverage control algorithm for optimal defensive formations in ice hockey.
 
-- date: "Oct 2024"
-  text: >-
-    Filed a US patent application, <em>Robot Operation System</em>, on long-horizon robot task
-    allocation and motion planning.
 
 - date: "Aug 2024"
   text: >-

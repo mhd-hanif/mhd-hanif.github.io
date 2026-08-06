@@ -19,7 +19,7 @@ description: "Talks and presentations given by Muhammad Hanif at conferences, wo
         <span class="row-body">
           <a class="row-title" href="{{ talk.url | relative_url }}">{{ talk.title }}</a>
           <span class="row-meta">
-            {{ talk.type }}{% if talk.venue %} &middot; {{ talk.venue }}{% endif %}{% if talk.location %} &middot; {{ talk.location }}{% endif %}
+            {{ talk.type }}{% if talk.event %} &middot; {{ talk.event }}{% endif %}{% if talk.venue %} &middot; {{ talk.venue }}{% endif %}{% if talk.location %} &middot; {{ talk.location }}{% endif %}
           </span>
         </span>
       </li>

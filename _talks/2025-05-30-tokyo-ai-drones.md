@@ -2,8 +2,8 @@
 title: "Drones Meet 3D-AI: Multi-Drone Collaboration for 3D Reconstruction"
 collection: talks
 type: "Invited Talk"
+event: "Tokyo AI × Drones — Invited Session"
 permalink: /talks/2025-05-30-tokyo-ai-drones
-venue: "Tokyo AI × Drones — Invited Session"
 date: 2025-05-30
 location: "Tokyo, Japan"
 ---
