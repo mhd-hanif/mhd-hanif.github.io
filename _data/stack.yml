@@ -1,0 +1,57 @@
+# Tech stack shown under the About section.
+
+- label: "Robot platforms"
+  items:
+    - "Multirotor & fixed-wing UAVs"
+    - "Hybrid VTOL"
+    - "UGVs"
+    - "Underwater gliders & AUVs"
+    - "Autonomous vessels"
+    - "Construction machinery"
+
+- label: "Control & planning"
+  items:
+    - "Coverage control"
+    - "Model predictive control"
+    - "Control barrier functions"
+    - "Multi-robot task allocation"
+    - "Distributed optimisation"
+    - "Path planning"
+
+- label: "Perception & 3D"
+  items:
+    - "3D reconstruction"
+    - "NeRF"
+    - "3D Gaussian splatting"
+    - "Photogrammetry"
+    - "Object detection"
+    - "Hyperspectral imaging"
+
+- label: "Frameworks"
+  items:
+    - "ROS / ROS2"
+    - "Gazebo"
+    - "Unity"
+    - "PyTorch"
+    - "TensorFlow"
+    - "OpenCV"
+    - "CUDA"
+    - "MATLAB / Simulink"
+
+- label: "Languages"
+  items:
+    - "C/C++"
+    - "Python"
+    - "C#"
+    - "MATLAB"
+    - "JavaScript"
+    - "LaTeX"
+
+- label: "Hardware"
+  items:
+    - "Pixhawk / ArduPilot"
+    - "Mission Planner"
+    - "Raspberry Pi"
+    - "Arduino"
+    - "BeagleBone"
+    - "Altium / Eagle"

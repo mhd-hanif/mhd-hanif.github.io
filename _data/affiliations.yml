@@ -1,33 +1,40 @@
 # Affiliation strip shown under the About section.
-# `logo` is optional: drop a file in /images/logos/ and set e.g. logo: "deepx.png".
-# Without a logo, a typographic monogram tile is rendered instead.
+#
+# `logo` is optional. Drop a file into /images/logos/ and set e.g. logo: "deepx.png"
+# (SVG or a transparent PNG around 200px tall works best). Without a logo, a
+# typographic wordmark tile is rendered instead.
 
 - name: "DeepX, Inc."
   short: "DeepX"
+  role: "Robotics Control Engineer"
   years: "2025 – Present"
   url: "https://deepx.co.jp/"
   logo:
 
 - name: "Institute of Science Tokyo"
   short: "Science Tokyo"
+  role: "Ph.D. & M.Eng."
   years: "2020 – 2025"
   url: "https://www.isct.ac.jp/en"
   logo:
 
-- name: "University of Seville"
-  short: "US"
-  years: "2021 – 2023"
-  url: "https://www.us.es/"
+- name: "MEXT Scholarship"
+  short: "MEXT"
+  role: "Japanese Government Scholar"
+  years: "2020 – 2025"
+  url: "https://www.studyinjapan.go.jp/en/planning/scholarship/"
+  logo:
+
+- name: "IROS Tech"
+  short: "IROS Tech"
+  role: "Drone Engineer"
+  years: "2019 – 2020"
+  url:
   logo:
 
 - name: "Bandung Institute of Technology"
   short: "ITB"
+  role: "B.Sc. Electrical Engineering"
   years: "2014 – 2019"
   url: "https://www.itb.ac.id/"
-  logo:
-
-- name: "MEXT Scholarship"
-  short: "MEXT"
-  years: "2020 – 2025"
-  url: "https://www.studyinjapan.go.jp/en/planning/scholarship/"
   logo:
