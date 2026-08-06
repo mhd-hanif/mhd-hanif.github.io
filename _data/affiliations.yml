@@ -1,40 +1,42 @@
 # Affiliation strip shown under the About section.
 #
-# `logo` is optional. Drop a file into /images/logos/ and set e.g. logo: "deepx.png"
-# (SVG or a transparent PNG around 200px tall works best). Without a logo, a
-# typographic wordmark tile is rendered instead.
+# `logo` names a file expected in /images/logos/. The template checks whether
+# that file actually exists: if it does, the logo is rendered; if not, a
+# typographic wordmark tile is used instead. So you can drop the image files in
+# at any time and they will appear with no further edits, and nothing renders
+# broken in the meantime. See images/logos/README.md for the expected files.
 
 - name: "DeepX, Inc."
   short: "DeepX"
   role: "Robotics Control Engineer"
   years: "2025 – Present"
   url: "https://deepx.co.jp/"
-  logo:
+  logo: "deepx.png"
 
 - name: "Institute of Science Tokyo"
   short: "Science Tokyo"
   role: "Ph.D. & M.Eng."
   years: "2020 – 2025"
   url: "https://www.isct.ac.jp/en"
-  logo:
+  logo: "science-tokyo.png"
 
 - name: "MEXT Scholarship"
   short: "MEXT"
   role: "Japanese Government Scholar"
   years: "2020 – 2025"
   url: "https://www.studyinjapan.go.jp/en/planning/scholarship/"
-  logo:
+  logo: "mext.png"
 
 - name: "IROS Tech"
   short: "IROS Tech"
   role: "Drone Engineer"
   years: "2019 – 2020"
   url:
-  logo:
+  logo: "iros-tech.png"
 
 - name: "Bandung Institute of Technology"
   short: "ITB"
   role: "B.Sc. Electrical Engineering"
   years: "2014 – 2019"
   url: "https://www.itb.ac.id/"
-  logo:
+  logo: "itb.png"

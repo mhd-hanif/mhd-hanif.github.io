@@ -558,6 +558,16 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.25; font-weight: 600; }
   margin-bottom: 5px;
 }
 .affiliation-mark img { max-height: 44px; max-width: 100%; width: auto; object-fit: contain; }
+
+/* Most institutional logos are dark ink on white and vanish on a dark
+   background, so give them a light plate in both themes. */
+.affiliation-mark.has-logo {
+  height: 56px;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  background: #fff;
+}
+.affiliation-mark.has-logo img { max-height: 44px; }
 .affiliation-monogram {
   display: grid;
   place-items: center;
