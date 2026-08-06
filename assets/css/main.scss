@@ -284,6 +284,20 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.25; font-weight: 600; }
   gap: clamp(24px, 5vw, 52px);
 }
 
+/* Too narrow for two columns: stack, with the photo centred above the name. */
+@media (max-width: 680px) {
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+  }
+  .hero-photo img { width: 136px; height: 136px; }
+  .hero-name { font-size: clamp(1.85rem, 9vw, 2.4rem); }
+  .hero-tagline { margin-bottom: 18px; }
+  .social-links { justify-content: center; }
+}
+
 .hero-photo { flex: 0 0 auto; }
 .hero-photo img {
   width: clamp(120px, 20vw, 168px);
