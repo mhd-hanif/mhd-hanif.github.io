@@ -452,31 +452,6 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.25; font-weight: 600; }
 
 .table-scroll { overflow-x: auto; }
 
-/* Research areas --------------------------------------------------------- */
-
-.research-areas {
-  list-style: none;
-  margin: 26px 0 0;
-  padding: 0;
-  display: grid;
-  gap: 10px;
-}
-.research-areas li {
-  display: grid;
-  grid-template-columns: minmax(150px, 210px) 1fr;
-  gap: 4px 18px;
-  padding: 13px 16px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface);
-}
-.ra-name { font-weight: 600; font-size: .93rem; }
-.ra-text { color: var(--text-muted); font-size: .93rem; }
-
-@media (max-width: 620px) {
-  .research-areas li { grid-template-columns: 1fr; }
-}
-
 /* Tech stack ------------------------------------------------------------- */
 
 .stack-list {

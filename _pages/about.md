@@ -6,15 +6,6 @@ news_visible: 6
 redirect_from:
   - /about/
   - /about.html
-research_areas:
-  - name: "Multi-Robot Coordination"
-    text: "Coverage control, task allocation and distributed optimisation for fleets of drones, ground robots and heavy machinery."
-  - name: "3D Perception & Reconstruction"
-    text: "Online map feedback, neural radiance fields, 3D Gaussian splatting and photogrammetry, used inside the control loop rather than after it."
-  - name: "Safety-Critical Control"
-    text: "Model predictive control and control barrier functions, applied to autonomous vessels and field machinery."
-  - name: "Field Robotics"
-    text: "Getting algorithms out of simulation — controlled testbeds, agricultural farms, lakes and construction sites."
 contact_text: >-
   I'm always glad to talk about multi-robot systems, coverage control, or 3D reconstruction
   for robotics. If you're a student curious about robotics or just starting out with

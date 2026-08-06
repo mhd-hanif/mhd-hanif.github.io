@@ -27,23 +27,13 @@ layout: default
       {{ content }}
     </div>
 
-    {% if page.research_areas %}
-    <ul class="research-areas">
-      {% for area in page.research_areas %}
-      <li>
-        <span class="ra-name">{{ area.name }}</span>
-        <span class="ra-text">{{ area.text }}</span>
-      </li>
-      {% endfor %}
-    </ul>
-    {% endif %}
   </div>
 </section>
 
 {% if site.data.stack %}
 <section class="section section-tight" id="stack">
   <div class="wrap">
-    <h2 class="section-title">Tech Stack</h2>
+    <h2 class="section-title">Research &amp; Technical Skills</h2>
     <ul class="stack-list">
       {% for group in site.data.stack %}
       <li class="stack-group">

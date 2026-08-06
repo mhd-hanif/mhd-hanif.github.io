@@ -1,4 +1,13 @@
-# Tech stack shown under the About section.
+# Research topics and technical skills, shown as one section under About.
+
+- label: "Research topics"
+  items:
+    - "Multi-robot systems"
+    - "Coverage control"
+    - "Multi-robot task allocation"
+    - "Safety-critical control"
+    - "3D reconstruction"
+    - "Computer vision"
 
 - label: "Robot platforms"
   items:
@@ -9,23 +18,16 @@
     - "Autonomous vessels"
     - "Construction machinery"
 
-- label: "Control & planning"
+- label: "Methods"
   items:
-    - "Coverage control"
     - "Model predictive control"
     - "Control barrier functions"
-    - "Multi-robot task allocation"
     - "Distributed optimisation"
     - "Path planning"
-
-- label: "Perception & 3D"
-  items:
-    - "3D reconstruction"
     - "NeRF"
     - "3D Gaussian splatting"
     - "Photogrammetry"
     - "Object detection"
-    - "Hyperspectral imaging"
 
 - label: "Frameworks"
   items:
