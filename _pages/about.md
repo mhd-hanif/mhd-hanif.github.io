@@ -22,29 +22,21 @@ contact_text: >-
   offer guidance. For professional and consulting enquiries, LinkedIn is the fastest route.
 ---
 
-I'm a **Robotics Control Engineer** at [DeepX, Inc.](https://deepx.co.jp/) in Tokyo, working on
-**construction robotics**. My work is coordinated planning for autonomous excavation — getting
-multiple autonomous shovels to work the same site safely and efficiently, on systems like DeepX's
-[pneumatic caisson excavation solution](https://www.deepx.co.jp/cases/pneumatic_caisson_solution/).
+I'm a Robotics Control Engineer at [DeepX](https://deepx.co.jp/) in Tokyo, developing coordinated
+planning methods for [autonomous construction
+machinery](https://www.deepx.co.jp/cases/pneumatic_caisson_solution/). My current work focuses on
+enabling multiple excavators to collaborate safely and efficiently during excavation operations.
 
-Before that I spent five years in the
-[Hatanaka Laboratory](https://hatanakalab.wixsite.com/website/faculty) at the **Institute of Science
-Tokyo** (formerly Tokyo Institute of Technology), where I earned both my **Ph.D.** (2025) and
-**M.Eng.** (2022) in Systems and Control Engineering. My dissertation built coverage control methods
-that close the loop between a drone team's motion and the 3D map it is reconstructing — validated in
-ROS/ROS2 and Unity, and flown in a controlled testbed and on an agricultural farm. Alongside it I ran
-industry collaborations with **Yokogawa Electric** (factory inspection), **Fujitsu** (drone target
-tracking), **Kawasaki Heavy Industries** (safe vessel operation in ports) and the **University of
-Seville** (solar irradiance monitoring).
+Previously, I completed my Ph.D. and M.Eng. in Systems and Control Engineering at the
+[Institute of Science Tokyo](https://www.isct.ac.jp/en) under the supervision of
+[Prof. Takeshi Hatanaka](https://hatanakalab.wixsite.com/website/faculty). My doctoral research
+focused on coordinated multi-drone image sampling and coverage control for real-time 3D
+reconstruction, from algorithm development and simulation to real-world experiments.
 
-I hold a **B.Sc. in Electrical Engineering** from the
-[Bandung Institute of Technology](https://www.itb.ac.id/), where I built a hybrid autonomous
-underwater glider and led student teams that won national awards for a folding-wing tube-launched UAV
-and a hybrid VTOL aircraft.
+Over the years, I have worked across aerial, ground, marine, underwater, and construction robotics.
+These experiences include UAV mapping and tracking, multi-robot task allocation, autonomous vessel
+control, underwater robotic systems, and autonomous heavy machinery.
 
-What ties it together is breadth of platform. I've designed, built and flown or sailed **aerial,
-ground, underwater, marine and construction robots** — from a 21-metre-wingspan HALE aircraft to an
-underwater glider to a fleet of excavators — and taken control algorithms all the way from theory
-through simulation to hardware in the field. Right now I'm especially interested in **3D AI**: neural
-radiance fields, Gaussian splatting and neural implicit methods, used for real-time reconstruction
-inside robotic control and perception loops.
+I'm particularly interested in multi-robot systems, safety-critical autonomous control, and computer
+vision. I enjoy developing coordination, planning, control, and perception methods that connect
+strong theoretical foundations with reliable operation in complex real-world environments.
