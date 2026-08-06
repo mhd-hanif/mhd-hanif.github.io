@@ -1,14 +1,25 @@
 ---
-title: "Brain tumor classification using convolutional neural network"
+title: "Brain Tumor Classification Using Convolutional Neural Network"
 collection: publications
 category: conferences
 permalink: /publication/2019-paper-abiwinanda-et-al
-# excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
 date: 2019-01-01
-venue: 'World Congress on Medical Physics and Biomedical Engineering 2018'
-# slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'https://www.researchgate.net/profile/Muhammad-Hanif-123/publication/325452559_Brain_Tumor_Classification_Using_Convolutional_Neural_Network/links/64ed6b766581d611d31bb928/Brain-Tumor-Classification-Using-Convolutional-Neural-Network.pdf'
-citation: 'Abiwinanda, Nyoman, <u><b>Muhammad Hanif</b></u>, S. Tafwida Hesaputra, Astri Handayani, and Tati Rajab Mengko. (2019). "<b>Brain tumor classification using convolutional neural network.</b>" In <i>World Congress on Medical Physics and Biomedical Engineering 2018: June 3-8, 2018, Prague, Czech Republic (Vol. 1)</i>, pp. 183-189. Springer Singapore.'
+sortdate: 2019-01-01
+venue: "World Congress on Medical Physics and Biomedical Engineering, 2018"
+venueshort: "WC 2018"
+authors: "Nyoman Abiwinanda, <span class=\"me\">Muhammad Hanif</span>, S. Tafwida Hesaputra, Astri Handayani, Tati Rajab Mengko"
+note: "Volume 1, pp. 183–189. Springer Singapore."
+teaser: "/images/portf_bt_1.png"
+thumb: "/images/thumbs/portf_bt_1.jpg"
+paperurl: "https://link.springer.com/chapter/10.1007/978-981-10-9035-6_33"
+bibtex: |
+  @inproceedings{abiwinanda2019brain,
+    title     = {Brain tumor classification using convolutional neural network},
+    author    = {Abiwinanda, Nyoman and Hanif, Muhammad and Hesaputra, S. Tafwida and Handayani, Astri and Mengko, Tati Rajab},
+    booktitle = {World Congress on Medical Physics and Biomedical Engineering 2018},
+    volume    = {1},
+    pages     = {183--189},
+    year      = {2019},
+    publisher = {Springer Singapore}
+  }
 ---
-
-<!-- The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font. -->

@@ -1,0 +1,99 @@
+# Latest news, newest first.
+# Each item: date (short label) + text (inline HTML allowed).
+# Items beyond `news_visible` in _config are hidden behind the "Show more" toggle.
+
+- date: "Aug 2026"
+  text: >-
+    Gave a plenary talk, <em>Orchestrating Multi-Robot Collaboration: From Aerial Drones to
+    Heavy Machinery</em>, at the 17th Multidisciplinary International Student Workshop
+    (MISW 2026), Institute of Science Tokyo.
+
+- date: "Feb 2026"
+  text: >-
+    Our work on hyperspectral imaging for rice plants cultivated in closed plant factories
+    was presented at the <strong>3rd BrIAS Conference on Smart Agriculture</strong>,
+    Brussels, Belgium.
+
+- date: "Nov 2025"
+  text: >-
+    Started as a <strong>Robotics Control Engineer</strong> at
+    <a href="https://deepx.co.jp/" target="_blank" rel="noopener">DeepX, Inc.</a> in Tokyo,
+    working on coordinated planning for autonomous excavation with multiple autonomous shovels.
+
+- date: "Sep 2025"
+  text: >-
+    Completed my <strong>Ph.D. in Systems and Control Engineering</strong> at the
+    Institute of Science Tokyo, advised by Prof. Takeshi Hatanaka.
+
+- date: "Jul 2025"
+  text: >-
+    Submitted my doctoral dissertation, <em>Multi-Drone Coordinated Image Sampling for 3D Map
+    Reconstruction through Efficient and Scene-Adaptive Coverage Control</em>.
+
+- date: "Jul 2025"
+  text: >-
+    <em>Coverage-Recon: Coordinated Multi-Drone Image Sampling with Online Map Feedback</em>
+    is under review at <strong>IEEE Transactions on Control Systems Technology</strong>.
+
+- date: "May 2025"
+  text: >-
+    Invited talk, <em>Drones Meet 3D-AI: Multi-Drone Collaboration for 3D Reconstruction</em>,
+    at the Tokyo AI &times; Drones session in Tokyo.
+
+- date: "Mar 2025"
+  text: >-
+    Two papers accepted for presentation at the <strong>2025 European Control Conference</strong>
+    &mdash; on real-time map feedback for coordinated image sampling, and on hierarchical
+    multi-robot data sampling through online Gaussian processes.
+
+- date: "Jan 2025"
+  text: >-
+    Joined <strong>FBTriangle</strong> as a simulation software engineer intern, developing a
+    coverage control algorithm for optimal defensive formations in ice hockey.
+
+- date: "Oct 2024"
+  text: >-
+    Filed a US patent application, <em>Robot Operation System</em>, on long-horizon robot task
+    allocation and motion planning.
+
+- date: "Aug 2024"
+  text: >-
+    Presented <em>Real-time Adaptation of Drone Altitude and Object Detection Model for Moving
+    Target Tracking</em> at the <strong>SICE Festival 2024</strong> in Kochi, Japan.
+
+- date: "Apr 2024"
+  text: >-
+    <em>Efficient Angle-Aware Coverage Control for Large-Scale Map Reconstruction using Drone
+    Networks</em> published in the <strong>SICE Journal of Control, Measurement, and System
+    Integration</strong>.
+
+- date: "Nov 2023"
+  text: >-
+    Presented collaborative 3D structure reconstruction with drone teams at the
+    <strong>SSS Global Forum 2023</strong> in Tokyo, Japan.
+
+- date: "Oct 2023"
+  text: >-
+    Awarded the <strong>WISE SSS Doctoral Leadership Scholarship</strong> for research ability
+    and potential.
+
+- date: "Sep 2023"
+  text: >-
+    <em>Hierarchical Vessel Autonomous Operation in a Port with Safety Certificates</em>
+    accepted at the <strong>IFAC World Congress 2023</strong>.
+
+- date: "Apr 2023"
+  text: >-
+    <em>Predictive Receding-Horizon Multi-Robot Task Allocation Applied to the Mapping of Direct
+    Normal Irradiance in a Thermosolar Power Plant</em> published in <strong>Solar Energy</strong>.
+
+- date: "Nov 2022"
+  text: >-
+    Poster presentation on <em>Human-Collaborative Control of Drone Networks with Virtual
+    Reality</em> at the WISE SSS Matching Workshop 2022.
+
+- date: "Oct 2022"
+  text: >-
+    Started my Ph.D. at Tokyo Institute of Technology in the
+    <a href="https://hatanakalab.wixsite.com/website" target="_blank" rel="noopener">Hatanaka
+    Laboratory</a>.

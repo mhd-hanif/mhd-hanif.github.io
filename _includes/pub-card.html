@@ -1,0 +1,47 @@
+{% assign pub = include.pub %}
+<article class="pub-card">
+  <div class="pub-media">
+    <a href="{{ pub.url | relative_url }}" aria-label="{{ pub.title | strip_html | escape }}">
+      {% assign card_img = pub.thumb | default: pub.teaser %}
+      {% if card_img %}
+        <img src="{{ card_img | relative_url }}" alt="{{ pub.title | strip_html | escape }}" loading="lazy" decoding="async">
+      {% else %}
+        <span class="pub-media-fallback" aria-hidden="true">{{ pub.venueshort | default: "Paper" }}</span>
+      {% endif %}
+    </a>
+  </div>
+
+  <div class="pub-body">
+    <p class="pub-venue">
+      <span class="venue-name">{{ pub.venue }}</span>
+      {% if pub.status %}<span class="badge badge-status">{{ pub.status }}</span>{% endif %}
+      {% for b in pub.badges %}
+        {% if b.url %}<a class="badge" href="{{ b.url }}" target="_blank" rel="noopener">{{ b.label }}</a>
+        {% else %}<span class="badge">{{ b.label }}</span>{% endif %}
+      {% endfor %}
+    </p>
+
+    <h3 class="pub-title"><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></h3>
+
+    {% if pub.authors %}<p class="pub-authors">{{ pub.authors }}</p>{% endif %}
+    {% if pub.note %}<p class="pub-note">{{ pub.note }}</p>{% endif %}
+
+    <div class="pub-links">
+      {% if pub.paperurl %}<a class="btn" href="{{ pub.paperurl }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+      {% if pub.project %}<a class="btn" href="{{ pub.project | relative_url }}">Project Page</a>{% endif %}
+      {% if pub.code %}<a class="btn" href="{{ pub.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+      {% if pub.video %}<a class="btn" href="{{ pub.video }}" target="_blank" rel="noopener">Video</a>{% endif %}
+      {% if pub.slides %}<a class="btn" href="{{ pub.slides | relative_url }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+      {% if pub.poster %}<a class="btn" href="{{ pub.poster | relative_url }}" target="_blank" rel="noopener">Poster</a>{% endif %}
+      {% if pub.patent %}<a class="btn" href="{{ pub.patent }}" target="_blank" rel="noopener">Patent</a>{% endif %}
+      {% if pub.bibtex %}<button class="btn btn-bibtex" type="button" aria-expanded="false">BibTeX</button>{% endif %}
+    </div>
+
+    {% if pub.bibtex %}
+    <div class="bibtex-panel" hidden>
+      <button class="bibtex-copy" type="button">Copy</button>
+      <pre><code>{{ pub.bibtex | strip }}</code></pre>
+    </div>
+    {% endif %}
+  </div>
+</article>

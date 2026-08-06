@@ -1,16 +1,29 @@
 ---
-layout: archive
-title: "Talks & Presentations"
+layout: default
+title: "Talks"
 permalink: /talks/
-author_profile: true
+description: "Talks and presentations given by Muhammad Hanif at conferences, workshops and invited sessions."
 ---
+<article class="section page">
+  <div class="wrap">
+    <header class="page-head">
+      <h1 class="page-title">Talks &amp; Presentations</h1>
+      <p class="page-subtitle">Conference presentations, invited talks and poster sessions.</p>
+    </header>
 
-{% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+    <ul class="row-list">
+      {% assign talks = site.talks | sort: "date" | reverse %}
+      {% for talk in talks %}
+      <li class="row-item">
+        <span class="row-date">{{ talk.date | date: "%b %Y" }}</span>
+        <span class="row-body">
+          <a class="row-title" href="{{ talk.url | relative_url }}">{{ talk.title }}</a>
+          <span class="row-meta">
+            {{ talk.type }}{% if talk.venue %} &middot; {{ talk.venue }}{% endif %}{% if talk.location %} &middot; {{ talk.location }}{% endif %}
+          </span>
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>

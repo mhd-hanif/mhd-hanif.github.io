@@ -1,0 +1,33 @@
+# Affiliation strip shown under the About section.
+# `logo` is optional: drop a file in /images/logos/ and set e.g. logo: "deepx.png".
+# Without a logo, a typographic monogram tile is rendered instead.
+
+- name: "DeepX, Inc."
+  short: "DeepX"
+  years: "2025 – Present"
+  url: "https://deepx.co.jp/"
+  logo:
+
+- name: "Institute of Science Tokyo"
+  short: "Science Tokyo"
+  years: "2020 – 2025"
+  url: "https://www.isct.ac.jp/en"
+  logo:
+
+- name: "University of Seville"
+  short: "US"
+  years: "2021 – 2023"
+  url: "https://www.us.es/"
+  logo:
+
+- name: "Bandung Institute of Technology"
+  short: "ITB"
+  years: "2014 – 2019"
+  url: "https://www.itb.ac.id/"
+  logo:
+
+- name: "MEXT Scholarship"
+  short: "MEXT"
+  years: "2020 – 2025"
+  url: "https://www.studyinjapan.go.jp/en/planning/scholarship/"
+  logo:

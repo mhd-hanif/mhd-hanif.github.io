@@ -1,14 +1,24 @@
 ---
-title: "Predictive receding-horizon multi-robot task allocation with moving tasks"
+title: "Predictive Receding-Horizon Multi-Robot Task Allocation with Moving Tasks"
 collection: publications
 category: conferences
 permalink: /publication/2022-paper-martin-et-al
-# excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2022-01-01
-venue: '2022 European Control Conference (ECC)'
-# slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'https://ieeexplore.ieee.org/abstract/document/9838127'
-citation: 'Martin, Javier G., <u><b>Muhammad Hanif</b></u>, Takeshi Hatanaka, Jose M. Maestre, and Eduardo F. Camacho. (2022). "<b>Predictive receding-horizon multi-robot task allocation with moving tasks.</b>" In <i>2022 European Control Conference (ECC)</i>, pp. 2030-2035. IEEE.'
+date: 2022-07-12
+sortdate: 2022-07-12
+venue: "European Control Conference (ECC), 2022"
+venueshort: "ECC"
+authors: "Javier G. Martin, <span class=\"me\">Muhammad Hanif</span>, Takeshi Hatanaka, Jose M. Maestre, Eduardo F. Camacho"
+note: "pp. 2030–2035."
+teaser: "/images/portf_la_africana_1.gif"
+thumb: "/images/thumbs/portf_la_africana_1.jpg"
+paperurl: "https://ieeexplore.ieee.org/abstract/document/9838127"
+bibtex: |
+  @inproceedings{martin2022predictive,
+    title     = {Predictive receding-horizon multi-robot task allocation with moving tasks},
+    author    = {Martin, Javier G. and Hanif, Muhammad and Hatanaka, Takeshi and Maestre, Jose M. and Camacho, Eduardo F.},
+    booktitle = {2022 European Control Conference (ECC)},
+    pages     = {2030--2035},
+    year      = {2022},
+    publisher = {IEEE}
+  }
 ---
-
-<!-- The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font. -->

@@ -1,14 +1,22 @@
 ---
-layout: archive
-title: "Portfolio"
+layout: default
+title: "Projects"
 permalink: /portfolio/
-author_profile: true
+description: "Robotics projects by Muhammad Hanif — multi-drone coverage control, autonomous vessels, underwater gliders and UAV development."
 ---
+<article class="section page">
+  <div class="wrap">
+    <header class="page-head">
+      <h1 class="page-title">Projects</h1>
+      <p class="page-subtitle">
+        Research and engineering projects, from multi-drone coverage control and autonomous vessels
+        through to underwater gliders and fixed-wing UAV development.
+      </p>
+    </header>
 
-{% include base_path %}
-
-
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
-
+    <div class="project-grid">
+      {% assign items = site.portfolio | sort: "order" %}
+      {% for item in items %}{% include project-card.html item=item %}{% endfor %}
+    </div>
+  </div>
+</article>

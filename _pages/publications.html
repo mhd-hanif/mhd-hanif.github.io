@@ -1,36 +1,32 @@
 ---
-layout: archive
+layout: default
 title: "Publications"
 permalink: /publications/
-author_profile: true
+description: "Journal articles, conference papers, book chapters, theses and patents by Muhammad Hanif."
 ---
+<article class="section page">
+  <div class="wrap">
+    <header class="page-head">
+      <h1 class="page-title">Publications</h1>
+      <p class="page-subtitle">
+        Also on <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>
+        and <a href="{{ site.author.orcid }}" target="_blank" rel="noopener">ORCID</a>.
+      </p>
+    </header>
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+    {% for category in site.publication_category %}
+      {% assign key = category[0] %}
+      {% assign group = site.publications | where: "category", key | sort: "sortdate" | reverse %}
+      {% if group.size > 0 %}
+      <section class="pub-group">
+        <h2 class="pub-group-title">
+          {{ category[1].title }}<span class="count">{{ group.size }}</span>
+        </h2>
+        <div class="pub-list">
+          {% for pub in group %}{% include pub-card.html pub=pub %}{% endfor %}
+        </div>
+      </section>
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+  </div>
+</article>
