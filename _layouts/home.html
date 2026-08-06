@@ -16,6 +16,7 @@ layout: default
         {% if a.affiliation_url %}<a href="{{ a.affiliation_url }}" target="_blank" rel="noopener">{{ a.affiliation }}</a>{% else %}{{ a.affiliation }}{% endif %}{% endif %}
       </p>
       {% include social-links.html %}
+      <p class="hero-updated">Last updated: {{ site.time | date: "%-d %B %Y" }}</p>
     </div>
   </div>
 </section>
@@ -171,43 +172,12 @@ layout: default
 </section>
 {% endif %}
 
-{% if site.data.awards %}
-<section class="section" id="awards">
-  <div class="wrap">
-    <h2 class="section-title">Awards &amp; Recognition</h2>
-    <ul class="row-list">
-      {% for aw in site.data.awards %}
-      <li class="row-item">
-        <span class="row-date">{{ aw.date }}</span>
-        <span class="row-body">
-          <span class="row-title as-text">{{ aw.name }}</span>
-          {% if aw.text %}<span class="row-meta">{{ aw.text }}</span>{% endif %}
-        </span>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
-{% endif %}
-
-{% if site.data.service %}
-<section class="section" id="service">
-  <div class="wrap">
-    <h2 class="section-title">Academic Service</h2>
-    <ul class="row-list">
-      {% for s in site.data.service %}
-      <li class="row-item">
-        <span class="row-date">{{ s.years }}</span>
-        <span class="row-body">
-          <span class="row-title as-text">{{ s.role }}</span>
-          {% if s.org %}<span class="row-meta">{{ s.org }}</span>{% endif %}
-        </span>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
-{% endif %}
+{% comment %}
+Awards & Recognition and Academic Service are intentionally not shown on the
+homepage. The data files (_data/awards.yml, _data/service.yml) are still used
+by the CV page at /cv/ — delete nothing to re-enable, just re-add a section
+here.
+{% endcomment %}
 
 <section class="section section-contact" id="contact">
   <div class="wrap">
