@@ -5,6 +5,7 @@ permalink: /portfolio/safe-autonomous-ship-control/
 order: 4
 summary: "Hierarchical control for autonomous vessels manoeuvring inside a port, combining model predictive control with control barrier function safety certificates."
 teaser: "/images/portf_ship_1.gif"
+motion: "/images/motion/portf_ship_1.webp"
 thumb: "/images/thumbs/portf_ship_1.jpg"
 period: "2022 – 2024"
 collaborator: "Kawasaki Heavy Industries"
@@ -13,10 +14,12 @@ tags:
   - "Simulink"
   - "MPC"
   - "Control Barrier Functions"
-paperurl: "https://www.sciencedirect.com/science/article/pii/S2405896323018554"
 featured: true
 redirect_from:
   - /portfolio/3_safe%20autonomous_ship_control/
+publications:
+  - "/publication/2024-book-otsuki-et-al"
+  - "/publication/2023-paper-otsuki-et-al"
 ---
 
 Ports are cluttered, constrained and unforgiving: a vessel has to reach its berth while respecting

@@ -3,6 +3,7 @@ title: "Brain Tumor Classification Using Convolutional Neural Network"
 collection: publications
 category: conferences
 permalink: /publication/2019-paper-abiwinanda-et-al
+project: "/portfolio/brain-tumor-classifier/"
 date: 2019-01-01
 sortdate: 2019-01-01
 venue: "World Congress on Medical Physics and Biomedical Engineering, 2018"

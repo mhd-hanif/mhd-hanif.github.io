@@ -11,9 +11,10 @@ tags:
   - "TensorFlow"
   - "EfficientNet"
   - "Medical Imaging"
-paperurl: "https://ieeexplore.ieee.org/document/9293941"
 redirect_from:
   - /portfolio/7_dr_grader/
+publications:
+  - "/publication/2020-paper-lazuardi-et-al"
 ---
 
 Diabetic retinopathy is a leading cause of preventable blindness, and screening at scale is limited by

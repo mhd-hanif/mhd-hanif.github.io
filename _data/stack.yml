@@ -1,0 +1,59 @@
+# Research topics and technical skills, shown as one section under About.
+
+- label: "Research topics"
+  items:
+    - "Multi-robot systems"
+    - "Coverage control"
+    - "Multi-robot task allocation"
+    - "Safety-critical control"
+    - "3D reconstruction"
+    - "Computer vision"
+
+- label: "Robot platforms"
+  items:
+    - "Multirotor & fixed-wing UAVs"
+    - "Hybrid VTOL"
+    - "UGVs"
+    - "Underwater gliders & AUVs"
+    - "Autonomous vessels"
+    - "Construction machinery"
+
+- label: "Methods"
+  items:
+    - "Model predictive control"
+    - "Control barrier functions"
+    - "Distributed optimisation"
+    - "Path planning"
+    - "NeRF"
+    - "3D Gaussian splatting"
+    - "Photogrammetry"
+    - "Object detection"
+
+- label: "Frameworks"
+  items:
+    - "ROS / ROS2"
+    - "Gazebo"
+    - "Unity"
+    - "PyTorch"
+    - "TensorFlow"
+    - "OpenCV"
+    - "CUDA"
+    - "MATLAB / Simulink"
+
+- label: "Languages"
+  items:
+    - "C/C++"
+    - "Python"
+    - "C#"
+    - "MATLAB"
+    - "JavaScript"
+    - "LaTeX"
+
+- label: "Hardware"
+  items:
+    - "Pixhawk / ArduPilot"
+    - "Mission Planner"
+    - "Raspberry Pi"
+    - "Arduino"
+    - "BeagleBone"
+    - "Altium / Eagle"

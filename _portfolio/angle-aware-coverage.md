@@ -5,6 +5,7 @@ permalink: /portfolio/angle-aware-coverage/
 order: 2
 summary: "A Voronoi-based nominal input inside the angle-aware coverage QP, keeping viewing angles diverse across large reconstruction areas. Validated in ROS and on a physical testbed."
 teaser: "/images/portf_uaacc_1.gif"
+motion: "/images/motion/portf_uaacc_1.webp"
 thumb: "/images/thumbs/portf_uaacc_1.jpg"
 period: "2022 – 2024"
 tags:
@@ -12,10 +13,12 @@ tags:
   - "Multi-UAV"
   - "Voronoi"
   - "QP"
-paperurl: "https://www.tandfonline.com/doi/pdf/10.1080/18824889.2024.2346375"
 featured: true
 redirect_from:
   - /portfolio/1_2_angle-aware-coverage/
+publications:
+  - "/publication/2024-journal-hanif-et-al"
+  - "/publication/2025-thesis-hanif-phd"
 ---
 
 ## Short Summary

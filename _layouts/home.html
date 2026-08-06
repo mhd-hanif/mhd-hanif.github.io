@@ -27,18 +27,26 @@ layout: default
       {{ content }}
     </div>
 
-    {% if page.research_areas %}
-    <ul class="research-areas">
-      {% for area in page.research_areas %}
-      <li>
-        <span class="ra-name">{{ area.name }}</span>
-        <span class="ra-text">{{ area.text }}</span>
+  </div>
+</section>
+
+{% if site.data.stack %}
+<section class="section section-tight" id="stack">
+  <div class="wrap">
+    <h2 class="section-title">Research &amp; Technical Skills</h2>
+    <ul class="stack-list">
+      {% for group in site.data.stack %}
+      <li class="stack-group">
+        <span class="stack-label">{{ group.label }}</span>
+        <span class="stack-items">
+          {% for item in group.items %}<span class="chip">{{ item }}</span>{% endfor %}
+        </span>
       </li>
       {% endfor %}
     </ul>
-    {% endif %}
   </div>
 </section>
+{% endif %}
 
 {% if site.data.affiliations %}
 <section class="section section-tight" id="affiliations">
@@ -47,14 +55,17 @@ layout: default
     <ul class="affiliations">
       {% for af in site.data.affiliations %}
       <li class="affiliation">
-        <a href="{{ af.url }}" target="_blank" rel="noopener">
-          <span class="affiliation-mark">
-            {% if af.logo %}<img src="{{ af.logo | prepend: '/images/logos/' | relative_url }}" alt="{{ af.name }}" loading="lazy">
+        {% if af.url %}<a href="{{ af.url }}" target="_blank" rel="noopener">{% else %}<div class="affiliation-inner">{% endif %}
+          {% assign logo_path = af.logo | prepend: '/images/logos/' %}
+          {% assign logo_file = site.static_files | where: "path", logo_path | first %}
+          <span class="affiliation-mark{% if af.logo and logo_file %} has-logo{% endif %}">
+            {% if af.logo and logo_file %}<img src="{{ logo_path | relative_url }}" alt="{{ af.name }}" loading="lazy">
             {% else %}<span class="affiliation-monogram">{{ af.short }}</span>{% endif %}
           </span>
           <span class="affiliation-name">{{ af.name }}</span>
+          {% if af.role %}<span class="affiliation-role">{{ af.role }}</span>{% endif %}
           <span class="affiliation-years">{{ af.years }}</span>
-        </a>
+        {% if af.url %}</a>{% else %}</div>{% endif %}
       </li>
       {% endfor %}
     </ul>
@@ -84,6 +95,21 @@ layout: default
 </section>
 {% endif %}
 
+{% assign projects = site.portfolio | where: "featured", true | sort: "order" %}
+{% if projects.size > 0 %}
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">Selected Projects</h2>
+      <p class="section-note">All projects on the <a href="{{ '/portfolio/' | relative_url }}">projects page</a>.</p>
+    </div>
+    <div class="project-grid">
+      {% for item in projects %}{% include project-card.html item=item %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 {% assign featured = site.publications | where: "featured", true | sort: "sortdate" | reverse %}
 {% if featured.size > 0 %}
 <section class="section" id="publications">
@@ -97,33 +123,6 @@ layout: default
     </div>
     <div class="pub-list">
       {% for pub in featured %}{% include pub-card.html pub=pub %}{% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
-
-{% assign theses = site.publications | where: "category", "thesis" | sort: "sortdate" | reverse %}
-{% if theses.size > 0 %}
-<section class="section" id="thesis">
-  <div class="wrap">
-    <h2 class="section-title">Doctoral Thesis</h2>
-    <div class="pub-list">
-      {% include pub-card.html pub=theses.first %}
-    </div>
-  </div>
-</section>
-{% endif %}
-
-{% assign projects = site.portfolio | where: "featured", true | sort: "order" %}
-{% if projects.size > 0 %}
-<section class="section" id="projects">
-  <div class="wrap">
-    <div class="section-head">
-      <h2 class="section-title">Selected Projects</h2>
-      <p class="section-note">All projects on the <a href="{{ '/portfolio/' | relative_url }}">projects page</a>.</p>
-    </div>
-    <div class="project-grid">
-      {% for item in projects %}{% include project-card.html item=item %}{% endfor %}
     </div>
   </div>
 </section>

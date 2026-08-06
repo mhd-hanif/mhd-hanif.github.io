@@ -3,12 +3,14 @@ title: "Efficient Angle-Aware Coverage Control for Large-Scale Map Reconstructio
 collection: publications
 category: manuscripts
 permalink: /publication/2024-journal-hanif-et-al
+project: "/portfolio/angle-aware-coverage/"
 date: 2024-05-01
 sortdate: 2024-05-01
 venue: "SICE Journal of Control, Measurement, and System Integration, 2024"
 venueshort: "SICE JCMSI"
 authors: "<span class=\"me\">Muhammad Hanif</span>, Takumi Shimizu, Zhiyuan Lu, Masaya Suenaga, Takeshi Hatanaka"
 teaser: "/images/portf_uaacc_1.gif"
+motion: "/images/motion/portf_uaacc_1.webp"
 thumb: "/images/thumbs/portf_uaacc_1.jpg"
 paperurl: "https://www.tandfonline.com/doi/pdf/10.1080/18824889.2024.2346375"
 video: "https://www.youtube.com/watch?v=ZhDbBBvplhY"

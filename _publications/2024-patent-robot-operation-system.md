@@ -3,6 +3,7 @@ title: "Robot Operation System"
 collection: publications
 category: patents
 permalink: /publication/2024-patent-robot-operation-system
+project: "/portfolio/equipment-inspection-task-allocation/"
 date: 2024-10-24
 sortdate: 2024-10-24
 venue: "US Patent Application, 2024"

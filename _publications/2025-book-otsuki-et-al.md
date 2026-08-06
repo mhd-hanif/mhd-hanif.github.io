@@ -3,6 +3,7 @@ title: "Hierarchical Vessel Safe Operation in a Port through CBF, MPC and RRT-li
 collection: publications
 category: books
 permalink: /publication/2024-book-otsuki-et-al
+project: "/portfolio/safe-autonomous-ship-control/"
 date: 2025-01-01
 sortdate: 2025-01-01
 venue: "Nonlinear and Constrained Control — Springer Nature, 2025"
@@ -10,6 +11,7 @@ venueshort: "Springer"
 authors: "Satoshi Otsuki, Naoki Hatta, <span class=\"me\">Muhammad Hanif</span>, Riku Funada, Kenichi Nakashima, Takeshi Hatanaka"
 note: "Book chapter, pp. 407–441. E. Garone, I. V. Kolmanovsky and T. W. Nguyen (eds)."
 teaser: "/images/portf_ship_1.gif"
+motion: "/images/motion/portf_ship_1.webp"
 thumb: "/images/thumbs/portf_ship_1.jpg"
 bibtex: |
   @incollection{otsuki2025hierarchical,

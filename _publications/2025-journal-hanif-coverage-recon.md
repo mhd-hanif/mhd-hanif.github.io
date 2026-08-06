@@ -3,6 +3,7 @@ title: "Coverage-Recon: Coordinated Multi-Drone Image Sampling with Online Map F
 collection: publications
 category: manuscripts
 permalink: /publication/2025-journal-hanif-coverage-recon
+project: "/portfolio/map-feedback-coverage/"
 date: 2025-07-01
 sortdate: 2025-07-01
 venue: "IEEE Transactions on Control Systems Technology, 2025"
@@ -10,6 +11,7 @@ venueshort: "IEEE T-CST"
 authors: "<span class=\"me\">Muhammad Hanif</span>, Takumi Sumino, Kuniaki Uto, Daisuke Ichihashi, Kelvin Cheng, Takeshi Hatanaka"
 status: "Under review"
 teaser: "/images/portf_mfc_1.gif"
+motion: "/images/motion/portf_mfc_1.webp"
 thumb: "/images/thumbs/portf_mfc_1.jpg"
 video: "https://www.youtube.com/watch?v=ZhDbBBvplhY"
 featured: true

@@ -5,6 +5,7 @@ permalink: /portfolio/drone-target-tracking/
 order: 3
 summary: "Adapting a drone's altitude and its object-detection model in real time, so detection accuracy and field of view stay matched to how the target is moving."
 teaser: "/images/portf_target_tracking_1.gif"
+motion: "/images/motion/portf_target_tracking_1.webp"
 thumb: "/images/thumbs/portf_target_tracking_1.jpg"
 period: "2023 – 2024"
 collaborator: "Fujitsu"
@@ -13,10 +14,11 @@ tags:
   - "TensorFlow"
   - "Coverage Control"
   - "Object Detection"
-paperurl: "https://paperhost.org/proceedings/controls/SICE24/files/0252.pdf"
 featured: true
 redirect_from:
   - /portfolio/2_drone_target_tracking/
+publications:
+  - "/publication/2024-paper-hanif-et-al"
 ---
 
 Tracking a moving target from the air forces a trade-off. Fly low and the object detector is accurate

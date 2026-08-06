@@ -11,6 +11,8 @@ tags:
   - "Unity"
   - "C#"
   - "Path Planning"
+publications:
+  - "/publication/2024-patent-robot-operation-system"
 ---
 
 Routine equipment inspection in a plant is a long-horizon scheduling problem as much as a robotics one:

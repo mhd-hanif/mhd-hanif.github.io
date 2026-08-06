@@ -3,12 +3,14 @@ title: "Impact of Real-time Map Feedback on Coordinated Image Sampling for 3D Re
 collection: publications
 category: conferences
 permalink: /publication/2025-paper-hanif-et-al
+project: "/portfolio/map-feedback-coverage/"
 date: 2025-06-24
 sortdate: 2025-06-24
 venue: "European Control Conference (ECC), 2025"
 venueshort: "ECC"
 authors: "<span class=\"me\">Muhammad Hanif</span>, Takumi Sumino, Kuniaki Uto, Daisuke Ichihashi, Kelvin Cheng, Takeshi Hatanaka"
 teaser: "/images/portf_mfc_1.gif"
+motion: "/images/motion/portf_mfc_1.webp"
 thumb: "/images/thumbs/portf_mfc_1_alt.jpg"
 video: "https://www.youtube.com/watch?v=ZhDbBBvplhY"
 featured: true
