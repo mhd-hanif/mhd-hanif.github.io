@@ -3,12 +3,19 @@ title: "Human Workload Evaluation of Drone Swarm Formation Control using Virtual
 collection: publications
 category: conferences
 permalink: /publication/2023-paper-asavasirikulkij-et-al
-# excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2023-01-01
-venue: 'Companion of the 2023 ACM/IEEE International Conference on Human-Robot Interaction'
-# slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'https://www.researchgate.net/profile/Chanun-Asavasirikulkij/publication/369195287_Human_Workload_Evaluation_of_Drone_Swarm_Formation_Control_using_Virtual_Reality_Interface/links/64d9ba5b25837316ee0e06bb/Human-Workload-Evaluation-of-Drone-Swarm-Formation-Control-using-Virtual-Reality-Interface.pdf'
-citation: 'Asavasirikulkij, Chanun, and <u><b>Muhammad Hanif</b></u>. (2023). "<b>Human Workload Evaluation of Drone Swarm Formation Control using Virtual Reality Interface.</b>" In <i>Companion of the 2023 ACM/IEEE International Conference on Human-Robot Interaction</i>, pp. 132-136.'
+date: 2023-03-13
+sortdate: 2023-03-13
+venue: "ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2023"
+venueshort: "HRI"
+authors: "Chanun Asavasirikulkij, <span class=\"me\">Muhammad Hanif</span>"
+note: "Companion proceedings, pp. 132–136."
+paperurl: "https://dl.acm.org/doi/10.1145/3568294.3580060"
+bibtex: |
+  @inproceedings{asavasirikulkij2023human,
+    title     = {Human Workload Evaluation of Drone Swarm Formation Control using Virtual Reality Interface},
+    author    = {Asavasirikulkij, Chanun and Hanif, Muhammad},
+    booktitle = {Companion of the 2023 ACM/IEEE International Conference on Human-Robot Interaction},
+    pages     = {132--136},
+    year      = {2023}
+  }
 ---
-
-<!-- The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font. -->

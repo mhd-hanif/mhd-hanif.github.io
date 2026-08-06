@@ -1,12 +1,37 @@
 ---
-layout: archive
+layout: default
 title: "Teaching"
 permalink: /teaching/
-author_profile: true
+description: "Teaching assistantships and tutoring by Muhammad Hanif."
 ---
+<article class="section page">
+  <div class="wrap">
+    <header class="page-head">
+      <h1 class="page-title">Teaching</h1>
+      <p class="page-subtitle">Teaching assistantships at the Institute of Science Tokyo and the Bandung Institute of Technology.</p>
+    </header>
 
-{% include base_path %}
+    <ul class="row-list">
+      {% assign courses = site.teaching | sort: "date" | reverse %}
+      {% for c in courses %}
+      <li class="row-item">
+        <span class="row-date">{{ c.term | default: c.date | date: "%Y" }}</span>
+        <span class="row-body">
+          <a class="row-title" href="{{ c.url | relative_url }}">{{ c.title }}</a>
+          <span class="row-meta">{{ c.type }}{% if c.venue %} &middot; {{ c.venue }}{% endif %}</span>
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+    <ul class="row-list" style="margin-top:0">
+      <li class="row-item">
+        <span class="row-date">2012 – 2014</span>
+        <span class="row-body">
+          <span class="row-title as-text">Math Olympiads for Elementary and Middle Schools — Tutor</span>
+          <span class="row-meta">Mathematics Education Clinic, Bogor, Indonesia</span>
+        </span>
+      </li>
+    </ul>
+  </div>
+</article>
