@@ -3,6 +3,7 @@ title: "Efficient Angle-Aware Coverage Control for Large-Scale Map Reconstructio
 collection: publications
 category: manuscripts
 permalink: /publication/2024-journal-hanif-et-al
+project: "/portfolio/angle-aware-coverage/"
 date: 2024-05-01
 sortdate: 2024-05-01
 venue: "SICE Journal of Control, Measurement, and System Integration, 2024"

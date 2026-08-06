@@ -16,6 +16,10 @@ video: "https://www.youtube.com/watch?v=ZhDbBBvplhY"
 featured: true
 redirect_from:
   - /portfolio/1_1_map-feedback-coverage/
+publications:
+  - "/publication/2025-journal-hanif-coverage-recon"
+  - "/publication/2025-paper-hanif-et-al"
+  - "/publication/2025-domestic-sumino-msc"
 ---
 
 ## Short Summary

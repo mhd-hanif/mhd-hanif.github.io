@@ -3,6 +3,7 @@ title: "Automatic Diabetic Retinopathy Classification with EfficientNet"
 collection: publications
 category: conferences
 permalink: /publication/2020-paper-lazuardi-et-al
+project: "/portfolio/diabetic-retinopathy-grading/"
 date: 2020-11-16
 sortdate: 2020-11-16
 venue: "IEEE Region 10 Conference (TENCON), 2020"

@@ -13,10 +13,11 @@ tags:
   - "TensorFlow"
   - "Coverage Control"
   - "Object Detection"
-paperurl: "https://paperhost.org/proceedings/controls/SICE24/files/0252.pdf"
 featured: true
 redirect_from:
   - /portfolio/2_drone_target_tracking/
+publications:
+  - "/publication/2024-paper-hanif-et-al"
 ---
 
 Tracking a moving target from the air forces a trade-off. Fly low and the object detector is accurate

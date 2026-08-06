@@ -3,6 +3,7 @@ title: "Real-time Adaptation of Drone Altitude and Object Detection Model for Mo
 collection: publications
 category: conferences
 permalink: /publication/2024-paper-hanif-et-al
+project: "/portfolio/drone-target-tracking/"
 date: 2024-08-28
 sortdate: 2024-08-28
 venue: "SICE Annual Conference, 2024"

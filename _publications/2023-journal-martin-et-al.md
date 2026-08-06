@@ -3,6 +3,7 @@ title: "Predictive Receding-Horizon Multi-Robot Task Allocation Applied to the M
 collection: publications
 category: manuscripts
 permalink: /publication/2023-journal-martin-et-al
+project: "/portfolio/multi-robot-task-allocation-thermosolar/"
 date: 2023-09-01
 sortdate: 2023-09-01
 venue: "Solar Energy, 2023"

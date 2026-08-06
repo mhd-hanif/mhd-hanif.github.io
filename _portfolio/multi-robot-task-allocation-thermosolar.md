@@ -13,10 +13,12 @@ tags:
   - "Gazebo"
   - "Python"
   - "Task Allocation"
-paperurl: "https://www.sciencedirect.com/science/article/abs/pii/S0038092X23005443"
 featured: true
 redirect_from:
   - /portfolio/4_multi_robot_task_allocation_thermo/
+publications:
+  - "/publication/2023-journal-martin-et-al"
+  - "/publication/2022-paper-martin-et-al"
 ---
 
 A thermosolar plant's output depends on direct normal irradiance, which drifts across the field as

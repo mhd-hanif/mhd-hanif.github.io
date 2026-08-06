@@ -12,9 +12,10 @@ tags:
   - "Keras"
   - "OpenCV"
   - "Medical Imaging"
-paperurl: "https://link.springer.com/chapter/10.1007/978-981-10-9035-6_33"
 redirect_from:
   - /portfolio/8_brain_tumor_classifier/
+publications:
+  - "/publication/2019-paper-abiwinanda-et-al"
 ---
 
 A convolutional neural network trained to classify brain tumours from MRI images into three classes.

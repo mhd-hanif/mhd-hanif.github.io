@@ -802,6 +802,13 @@ a.badge:hover { background: var(--accent); color: #fff; text-decoration: none; b
   .pub-media a { aspect-ratio: 2 / 1; }
 }
 
+.related-pubs {
+  margin-top: 40px;
+  padding-top: 26px;
+  border-top: 1px solid var(--border);
+}
+.related-pubs .section-title { margin-bottom: 18px; }
+
 /* Publication group headings on the full list ----------------------------- */
 
 .pub-group + .pub-group { margin-top: 40px; }

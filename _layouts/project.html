@@ -34,5 +34,17 @@ layout: default
     <div class="prose">
       {{ content }}
     </div>
+
+    {% if page.publications %}
+    <section class="related-pubs">
+      <h2 class="section-title">Publications from this project</h2>
+      <div class="pub-list">
+        {% for permalink in page.publications %}
+          {% assign pub = site.publications | where: "permalink", permalink | first %}
+          {% if pub %}{% include pub-card.html pub=pub hide_project=true %}{% endif %}
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
   </div>
 </article>

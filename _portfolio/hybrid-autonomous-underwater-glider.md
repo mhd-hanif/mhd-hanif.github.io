@@ -14,6 +14,9 @@ tags:
   - "Waypoint Tracking"
 redirect_from:
   - /portfolio/5_haug/
+publications:
+  - "/publication/2018-thesis-hanif-et-al"
+  - "/publication/2021-patent-buoyancy-engine"
 ---
 
 The Hybrid Autonomous Underwater Glider (HAUG) combines two modes of underwater travel. An autonomous

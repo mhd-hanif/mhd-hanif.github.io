@@ -3,6 +3,7 @@ title: "Coverage-Recon: Coordinated Multi-Drone Image Sampling with Online Map F
 collection: publications
 category: manuscripts
 permalink: /publication/2025-journal-hanif-coverage-recon
+project: "/portfolio/map-feedback-coverage/"
 date: 2025-07-01
 sortdate: 2025-07-01
 venue: "IEEE Transactions on Control Systems Technology, 2025"

@@ -103,6 +103,21 @@ layout: default
 </section>
 {% endif %}
 
+{% assign projects = site.portfolio | where: "featured", true | sort: "order" %}
+{% if projects.size > 0 %}
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">Selected Projects</h2>
+      <p class="section-note">All projects on the <a href="{{ '/portfolio/' | relative_url }}">projects page</a>.</p>
+    </div>
+    <div class="project-grid">
+      {% for item in projects %}{% include project-card.html item=item %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 {% assign featured = site.publications | where: "featured", true | sort: "sortdate" | reverse %}
 {% if featured.size > 0 %}
 <section class="section" id="publications">
@@ -116,21 +131,6 @@ layout: default
     </div>
     <div class="pub-list">
       {% for pub in featured %}{% include pub-card.html pub=pub %}{% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
-
-{% assign projects = site.portfolio | where: "featured", true | sort: "order" %}
-{% if projects.size > 0 %}
-<section class="section" id="projects">
-  <div class="wrap">
-    <div class="section-head">
-      <h2 class="section-title">Selected Projects</h2>
-      <p class="section-note">All projects on the <a href="{{ '/portfolio/' | relative_url }}">projects page</a>.</p>
-    </div>
-    <div class="project-grid">
-      {% for item in projects %}{% include project-card.html item=item %}{% endfor %}
     </div>
   </div>
 </section>

@@ -12,10 +12,11 @@ tags:
   - "Pixhawk"
   - "Fixed-Wing"
   - "Relay Network"
-paperurl: "https://www.researchgate.net/publication/327573471_Design_and_Development_of_Tube-Launched_Unmanned_Aerial_Vehicle"
 featured: true
 redirect_from:
   - /portfolio/9_3_folding-wing-uav/
+publications:
+  - "/publication/2018-paper-muzammil-et-al"
 ---
 
 This project was undertaken as part of the Indonesia National Aerial Robotics Competition 2017, where we developed one of Indonesia's first Autonomous Folding-Wing UAVs (Unmanned Aerial Vehicles). Our innovation earned us the "Best Design" award and the title of "1st Runner-Up" in this prestigious competition.

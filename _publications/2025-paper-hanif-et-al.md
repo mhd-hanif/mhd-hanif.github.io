@@ -3,6 +3,7 @@ title: "Impact of Real-time Map Feedback on Coordinated Image Sampling for 3D Re
 collection: publications
 category: conferences
 permalink: /publication/2025-paper-hanif-et-al
+project: "/portfolio/map-feedback-coverage/"
 date: 2025-06-24
 sortdate: 2025-06-24
 venue: "European Control Conference (ECC), 2025"
