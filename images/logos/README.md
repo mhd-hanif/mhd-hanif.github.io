@@ -5,13 +5,20 @@ Affiliations strip on the homepage automatically — no code or YAML change
 needed. Until a file exists, that entry falls back to a typographic wordmark
 tile, so a missing logo never renders as a broken image.
 
-| File | Organisation |
-|---|---|
-| `deepx.png` | DeepX, Inc. |
-| `science-tokyo.png` | Institute of Science Tokyo |
-| `mext.png` | MEXT Scholarship |
-| `iros-tech.png` | IROS Tech |
-| `itb.png` | Bandung Institute of Technology |
+| File | Organisation | Status |
+|---|---|---|
+| `deepx.png` | DeepX, Inc. | in use |
+| `science-tokyo.png` | Institute of Science Tokyo | in use |
+| `mext.png` | MEXT Scholarship | in use |
+| `iros-tech.jpg` | IROS Tech | in use |
+| `itb.png` | Bandung Institute of Technology | in use |
+| `tokyo-tech.png` | Tokyo Institute of Technology | spare — the pre-2024 mark, kept in case you want to show both eras |
+
+These were produced from the files uploaded in `[Assets] Add affiliation logo`:
+each was trimmed of surrounding whitespace, normalised to 160px tall and
+re-encoded, taking the set from roughly 600 KB to 60 KB. The raw uploads were
+removed once processed, since these supersede them; `git show 7e802a0` restores
+them if ever needed.
 
 The filenames are configured in `_data/affiliations.yml`; change them there if
 you prefer different ones. `.svg` works too — update the extension in that file

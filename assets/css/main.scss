@@ -528,7 +528,7 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.25; font-weight: 600; }
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
   gap: 12px;
 }
 .affiliation > a,
