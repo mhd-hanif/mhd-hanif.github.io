@@ -2,8 +2,8 @@
 title: "Drones Meet 3D-AI: Multi-Drone Collaboration for 3D Reconstruction"
 collection: talks
 type: "Invited Talk"
+event: "Emerging Technology Division, AstraZeneca India"
 permalink: /talks/2025-07-15-astrazeneca
-venue: "Emerging Technology Division, AstraZeneca India"
 date: 2025-07-15
 location: "Online"
 ---

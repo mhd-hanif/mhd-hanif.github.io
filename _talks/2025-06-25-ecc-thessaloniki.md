@@ -2,8 +2,8 @@
 title: "Impact of Real-time Map Feedback on Coordinated Image Sampling for 3D Reconstruction"
 collection: talks
 type: "International Conference"
+event: "2025 European Control Conference (ECC)"
 permalink: /talks/2025-06-25-ecc-thessaloniki
-venue: "2025 European Control Conference (ECC)"
 date: 2025-06-25
 location: "Thessaloniki, Greece"
 ---

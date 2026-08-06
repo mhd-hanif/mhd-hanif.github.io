@@ -143,7 +143,7 @@ layout: default
         <span class="row-date">{{ talk.date | date: "%b %Y" }}</span>
         <span class="row-body">
           <a class="row-title" href="{{ talk.url | relative_url }}">{{ talk.title }}</a>
-          <span class="row-meta">{{ talk.type }}{% if talk.venue %} &middot; {{ talk.venue }}{% endif %}{% if talk.location %} &middot; {{ talk.location }}{% endif %}</span>
+          <span class="row-meta">{{ talk.type }}{% if talk.event %} &middot; {{ talk.event }}{% endif %}{% if talk.venue %} &middot; {{ talk.venue }}{% endif %}{% if talk.location %} &middot; {{ talk.location }}{% endif %}</span>
         </span>
       </li>
       {% endfor %}
