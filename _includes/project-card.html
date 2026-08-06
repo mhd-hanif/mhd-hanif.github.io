@@ -1,0 +1,22 @@
+{% assign item = include.item %}
+<a class="project-card" href="{{ item.url | relative_url }}">
+  <div class="project-media">
+    {% assign card_img = item.thumb | default: item.teaser %}
+    {% if card_img %}
+      <img src="{{ card_img | relative_url }}" alt="{{ item.title | strip_html | escape }}" loading="lazy" decoding="async">
+    {% else %}
+      <span class="project-media-fallback" aria-hidden="true">{{ item.title | slice: 0, 1 }}</span>
+    {% endif %}
+  </div>
+  <div class="project-body">
+    {% if item.period or item.tags %}
+    <p class="project-meta">
+      {% if item.period %}<span>{{ item.period }}</span>{% endif %}
+      {% for t in item.tags limit: 3 %}<span class="tag">{{ t }}</span>{% endfor %}
+    </p>
+    {% endif %}
+    <h3 class="project-title">{{ item.title }}</h3>
+    {% if item.summary %}<p class="project-summary">{{ item.summary }}</p>{% endif %}
+    <span class="project-more">View project <span aria-hidden="true">&rarr;</span></span>
+  </div>
+</a>

@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<article class="section page">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ '/portfolio/' | relative_url }}">&larr; All projects</a></p>
+
+    <header class="page-head">
+      {% if page.period or page.tags %}
+      <p class="project-meta">
+        {% if page.period %}<span>{{ page.period }}</span>{% endif %}
+        {% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+      </p>
+      {% endif %}
+      <h1 class="page-title">{{ page.title }}</h1>
+      {% if page.summary %}<p class="page-subtitle">{{ page.summary }}</p>{% endif %}
+      {% if page.collaborator %}<p class="pub-note">In collaboration with {{ page.collaborator }}</p>{% endif %}
+
+      {% if page.paperurl or page.video or page.code %}
+      <div class="pub-links">
+        {% if page.paperurl %}<a class="btn" href="{{ page.paperurl }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+        {% if page.code %}<a class="btn" href="{{ page.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+        {% if page.video %}<a class="btn" href="{{ page.video }}" target="_blank" rel="noopener">Video</a>{% endif %}
+      </div>
+      {% endif %}
+    </header>
+
+    {% if page.teaser %}
+    <figure class="page-figure">
+      <img src="{{ page.teaser | relative_url }}" alt="{{ page.title | strip_html | escape }}" loading="lazy">
+    </figure>
+    {% endif %}
+
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>

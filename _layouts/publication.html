@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<article class="section page">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="{{ '/publications/' | relative_url }}">&larr; All publications</a></p>
+
+    <header class="page-head">
+      <p class="pub-venue">
+        <span class="venue-name">{{ page.venue }}</span>
+        {% if page.status %}<span class="badge badge-status">{{ page.status }}</span>{% endif %}
+        {% for b in page.badges %}
+          {% if b.url %}<a class="badge" href="{{ b.url }}" target="_blank" rel="noopener">{{ b.label }}</a>
+          {% else %}<span class="badge">{{ b.label }}</span>{% endif %}
+        {% endfor %}
+      </p>
+      <h1 class="page-title">{{ page.title }}</h1>
+      {% if page.authors %}<p class="pub-authors">{{ page.authors }}</p>{% endif %}
+      {% if page.note %}<p class="pub-note">{{ page.note }}</p>{% endif %}
+
+      <div class="pub-links">
+        {% if page.paperurl %}<a class="btn" href="{{ page.paperurl }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+        {% if page.project %}<a class="btn" href="{{ page.project | relative_url }}">Project Page</a>{% endif %}
+        {% if page.code %}<a class="btn" href="{{ page.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+        {% if page.video %}<a class="btn" href="{{ page.video }}" target="_blank" rel="noopener">Video</a>{% endif %}
+        {% if page.slides %}<a class="btn" href="{{ page.slides | relative_url }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+        {% if page.poster %}<a class="btn" href="{{ page.poster | relative_url }}" target="_blank" rel="noopener">Poster</a>{% endif %}
+        {% if page.patent %}<a class="btn" href="{{ page.patent }}" target="_blank" rel="noopener">Patent</a>{% endif %}
+        {% if page.bibtex %}<button class="btn btn-bibtex" type="button" aria-expanded="false">BibTeX</button>{% endif %}
+      </div>
+
+      {% if page.bibtex %}
+      <div class="bibtex-panel" hidden>
+        <button class="bibtex-copy" type="button">Copy</button>
+        <pre><code>{{ page.bibtex | strip }}</code></pre>
+      </div>
+      {% endif %}
+    </header>
+
+    {% if page.teaser %}
+    <figure class="page-figure">
+      <img src="{{ page.teaser | relative_url }}" alt="{{ page.title | strip_html | escape }}" loading="lazy">
+    </figure>
+    {% endif %}
+
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>
