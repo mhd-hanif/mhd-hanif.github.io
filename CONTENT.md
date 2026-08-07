@@ -62,6 +62,36 @@ Notes:
 - If you'd rather not run the script, just commit the source GIF with `teaser:`
   set and ask — the derived files can be generated for you.
 
+### Starting from a video instead of a GIF
+
+If the source is a video — a YouTube recording, a screen capture, a simulation
+export — don't make a GIF first. GIF is a poor intermediate: the same six
+seconds is 3–11 MB as GIF and around 200 KB as WebP, with better colour.
+`tools/clip-to-teaser.py` goes straight from the video to all three files:
+
+```bash
+pip install imageio-ffmpeg            # once, if ffmpeg isn't installed
+python3 tools/clip-to-teaser.py demo.mp4 --name portf_myproject \
+    --start 00:01:30 --duration 6
+
+# or straight from YouTube (pip install yt-dlp first)
+python3 tools/clip-to-teaser.py --url "https://youtu.be/XXXX" \
+    --name portf_myproject --start 00:01:30 --duration 6
+```
+
+It writes `images/portf_myproject.webp` (detail page), plus the card thumbnail
+and animation, and prints the three front-matter lines to paste in. Useful
+extras:
+
+- `--crop W:H:X:Y` — trim letterboxing, or focus on one pane of a multi-pane
+  recording, applied before scaling
+- `--fps` — default 10, which suits a screen capture and keeps files small
+- `--thumb-at` — which second of the clip to freeze for the still
+- `--gif` — also write a GIF, if you want one for slides or social media
+
+Pick a segment that reads at thumbnail size: clear movement, not too much fine
+text.
+
 ### Why not just use the GIF directly?
 
 A GIF in the card would work, but 40 MB of teasers on one page would not. The
