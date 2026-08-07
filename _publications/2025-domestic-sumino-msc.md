@@ -9,7 +9,7 @@ sortdate: 2025-03-01
 venue: "12th SICE Control Division Multi-Symposium, Osaka, 2025"
 venueshort: "SICE MSC"
 authors: "Takumi Sumino, <span class=\"me\">Muhammad Hanif</span>, Kuniaki Uto, Daisuke Ichihashi, Kelvin Cheng, Takeshi Hatanaka"
-teaser: "/images/portf_mfc_1.gif"
-motion: "/images/motion/portf_mfc_1.webp"
-thumb: "/images/thumbs/portf_mfc_1_alt2.jpg"
+teaser: "/images/portf_online_map_feedback.webp"
+motion: "/images/motion/portf_online_map_feedback.webp"
+thumb: "/images/thumbs/portf_online_map_feedback.jpg"
 ---

@@ -35,7 +35,7 @@
 
     <div class="pub-links">
       {% if pub.paperurl %}<a class="btn" href="{{ pub.paperurl }}" target="_blank" rel="noopener">Paper</a>{% endif %}
-      {% unless include.hide_project %}{% if pub.project %}<a class="btn" href="{{ pub.project | relative_url }}">Project Page</a>{% endif %}{% endunless %}
+      {% unless include.hide_project %}{% if pub.project %}{% if pub.project contains "://" %}<a class="btn" href="{{ pub.project }}" target="_blank" rel="noopener">Project Page</a>{% else %}<a class="btn" href="{{ pub.project | relative_url }}">Project Page</a>{% endif %}{% endif %}{% endunless %}
       {% if pub.code %}<a class="btn" href="{{ pub.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
       {% if pub.video %}<a class="btn" href="{{ pub.video }}" target="_blank" rel="noopener">Video</a>{% endif %}
       {% if pub.slides %}<a class="btn" href="{{ pub.slides | relative_url }}" target="_blank" rel="noopener">Slides</a>{% endif %}
