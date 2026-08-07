@@ -20,6 +20,7 @@ redirect_from:
 publications:
   - "/publication/2023-journal-martin-et-al"
   - "/publication/2022-paper-martin-et-al"
+  - "/publication/2022-thesis-hanif-et-al"
 ---
 
 A thermosolar plant's output depends on direct normal irradiance, which drifts across the field as

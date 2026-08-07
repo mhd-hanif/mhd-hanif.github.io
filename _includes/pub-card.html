@@ -1,7 +1,29 @@
 {% assign pub = include.pub %}
+{% comment %}
+  Where the title and the teaser image lead:
+    - the publication's project page when it has one -- an official external
+      page if set, otherwise the portfolio entry on this site
+    - the publication's own page when it has neither, or when this card is
+      already being rendered on its project page (hide_project)
+  The "Project Page" chip points at the same place, so the two never disagree.
+{% endcomment %}
+{% comment %}
+  Reset first: Liquid variables persist across iterations of the surrounding
+  loop, so without this every card after the first external one would also be
+  treated as external.
+{% endcomment %}
+{% assign pub_external = false %}
+{% if pub.project and include.hide_project != true %}
+  {% assign pub_target = pub.project %}
+  {% if pub.project contains "://" %}{% assign pub_external = true %}{% endif %}
+{% else %}
+  {% assign pub_target = pub.url %}
+{% endif %}
+{% unless pub_external %}{% assign pub_target = pub_target | relative_url %}{% endunless %}
+
 <article class="pub-card">
   <div class="pub-media">
-    <a href="{{ pub.url | relative_url }}" aria-label="{{ pub.title | strip_html | escape }}">
+    <a href="{{ pub_target }}"{% if pub_external %} target="_blank" rel="noopener"{% endif %} aria-label="{{ pub.title | strip_html | escape }}">
       {% assign card_img = pub.thumb | default: pub.teaser %}
       {% if card_img %}
         {% if pub.motion %}
@@ -28,14 +50,14 @@
       {% endfor %}
     </p>
 
-    <h3 class="pub-title"><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></h3>
+    <h3 class="pub-title"><a href="{{ pub_target }}"{% if pub_external %} target="_blank" rel="noopener"{% endif %}>{{ pub.title }}</a></h3>
 
     {% if pub.authors %}<p class="pub-authors">{{ pub.authors }}</p>{% endif %}
     {% if pub.note %}<p class="pub-note">{{ pub.note }}</p>{% endif %}
 
     <div class="pub-links">
       {% if pub.paperurl %}<a class="btn" href="{{ pub.paperurl }}" target="_blank" rel="noopener">Paper</a>{% endif %}
-      {% unless include.hide_project %}{% if pub.project %}{% if pub.project contains "://" %}<a class="btn" href="{{ pub.project }}" target="_blank" rel="noopener">Project Page</a>{% else %}<a class="btn" href="{{ pub.project | relative_url }}">Project Page</a>{% endif %}{% endif %}{% endunless %}
+      {% unless include.hide_project %}{% if pub.project %}{% if pub_external %}<a class="btn" href="{{ pub.project }}" target="_blank" rel="noopener">Project Page</a>{% else %}<a class="btn" href="{{ pub.project | relative_url }}">Project Page</a>{% endif %}{% endif %}{% endunless %}
       {% if pub.code %}<a class="btn" href="{{ pub.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
       {% if pub.video %}<a class="btn" href="{{ pub.video }}" target="_blank" rel="noopener">Video</a>{% endif %}
       {% if pub.slides %}<a class="btn" href="{{ pub.slides | relative_url }}" target="_blank" rel="noopener">Slides</a>{% endif %}

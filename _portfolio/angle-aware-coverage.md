@@ -19,6 +19,8 @@ redirect_from:
 publications:
   - "/publication/2024-journal-hanif-et-al"
   - "/publication/2025-thesis-hanif-phd"
+  - "/publication/2024-journal-lu-et-al"
+  - "/publication/2024-paper-lu-et-al"
 ---
 
 ## Short Summary

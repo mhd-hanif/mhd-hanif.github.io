@@ -26,13 +26,13 @@ external project page linked; body written from the project page.
 ### 2. Angle-Aware Coverage with Camera Rotational Motion Control
 `_publications/2024-journal-lu-et-al.md` — *SICE JCMSI, 2024*
 
-Currently: T ✅ (`angle_aware_illustration`, from the Coverage-Recon repo) · P ✅ · V ❌ · C ❌ · B ✅ · PP ❌
+Currently: T ✅ (`angle_aware_illustration`, from the Coverage-Recon repo) · P ✅ · V ❌ · C ❌ · B ✅ · PP ✅
 
 - [x] ~~Replace the static PNG teaser with a GIF~~
+- [x] ~~Link it to a project page both ways~~ — now a child of
+      *Angle-Aware Coverage*
 - [ ] Add `video:`
 - [ ] Add `code:`
-- [ ] Create a project page for it and link both ways (`project:` here,
-      `publications:` on the project)
 - [ ] Confirm the existing `paperurl:` still resolves
 
 ### 3. Hierarchical Vessel Safe Operation in a Port through CBF, MPC and RRT-like Spatiotemporal Path Planning
@@ -46,37 +46,43 @@ Currently: T ⚠️ (shared with the IFAC paper) · P ❌ · V ❌ · C ❌ · B
 ### 4. Hyperspectral Imaging for Useful Substance Production Using Rice Plants…
 `_publications/2026-paper-uto-brias.md` — *3rd BrIAS Conference, 2026*
 
-Currently: no teaser — falls back to the venue label
+Currently: no teaser — falls back to the venue label · PP ❌
 
 - [ ] Use a photo from the BrIAS conference as the teaser
+- [ ] Decide whether the hyperspectral work deserves its own project page —
+      without one the title just leads to this paper's own page
 
 ### 5. Hyperspectral Data-Based Growth State Estimation of Rice Plants…
 `_publications/2025-paper-uto-epps.md` — *EPPS, 2025*
 
-Currently: no teaser — falls back to the venue label
+Currently: no teaser — falls back to the venue label · PP ❌
 
 - [ ] Use a photo from EPPS 2025 as the teaser
+- [ ] Same project-page question as the BrIAS paper above
 
 ### 6. Hierarchical Multi-Robot Data Sampling for Environmental State Estimation through Online Gaussian Process
 `_publications/2025-paper-suenaga-et-al.md` — *ECC, 2025*
 
-Currently: no teaser
+Currently: no teaser · PP ❌
 
 - [ ] Add a GIF teaser
+- [ ] No project page — a Gaussian-process environmental-sampling project would
+      cover this one
 
 ### 7. Angle-Aware Full 3D Coverage Control with ADMM-based Dynamic Assignment of Charging Stations
 `_publications/2024-paper-lu-et-al.md` — *SICE Annual Conference, 2024*
 
-Currently: no teaser · P ✅
+Currently: no teaser · P ✅ · PP ✅
 
 - [ ] Add a GIF teaser
 
 ### 8. Human Workload Evaluation of Drone Swarm Formation Control using Virtual Reality Interface
 `_publications/2023-paper-asavasirikulkij-et-al.md` — *ACM/IEEE HRI, 2023*
 
-Currently: no teaser · P ✅
+Currently: no teaser · P ✅ · PP ❌
 
 - [ ] Add a GIF teaser
+- [ ] No project page — the VR swarm-interface work has none on the site yet
 
 ### 9. Predictive Receding-Horizon Multi-Robot Task Allocation with Moving Tasks
 `_publications/2022-paper-martin-et-al.md` — *ECC, 2022*
@@ -119,6 +125,12 @@ Currently: T ⚠️ (static `portf_haug_1.png`) · P ✅ · B ❌ · PP ✅
       `2022-thesis-hanif-et-al`.
 - [ ] **Video links.** Only three entries have `video:` set. The CV marks
       several more with a [Video] tag — worth reconciling.
+- [ ] **Publications with no project page.** Clicking their title lands on the
+      paper's own page, which is the intended fallback but the thinnest one:
+      `2026-paper-uto-brias`, `2025-paper-uto-epps`, `2025-paper-suenaga-et-al`,
+      `2023-paper-asavasirikulkij-et-al`. Two new `_portfolio/` entries — one
+      for the hyperspectral rice work, one for VR swarm interfaces — would
+      cover all four.
 
 ## Open questions from earlier
 

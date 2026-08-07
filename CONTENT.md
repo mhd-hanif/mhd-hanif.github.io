@@ -122,7 +122,7 @@ teaser: "/images/portf_x.gif"
 paperurl: "https://..."
 video: "https://..."
 code: "https://..."
-project: "/portfolio/some-project/"   # links the "Project Page" chip
+project: "/portfolio/some-project/"   # see "Where a publication title links to"
 featured: true               # show on the homepage
 bibtex: |
   @inproceedings{key2026,
@@ -163,6 +163,25 @@ Body text in Markdown. Images, videos and headings all work.
 
 The `publications:` list takes the `permalink` values from the publication
 files. Setting `project:` on those publications gives you the link back.
+
+## Where a publication title links to
+
+A publication card has one destination, and its title, its teaser image and its
+"Project Page" chip all share it. `project:` decides which:
+
+| `project:` in the front matter | Title and chip lead to |
+| --- | --- |
+| an external URL — `https://htnk-lab.github.io/coverage-recon/` | that page, in a new tab |
+| an internal permalink — `/portfolio/angle-aware-coverage/` | the project page on this site |
+| not set | the publication's own page; no chip is shown |
+
+Prefer an external project page when the group has published one — those carry
+the full video set. Point at a `_portfolio/` entry otherwise, and leave
+`project:` out only when the paper belongs to no project on the site.
+
+One exception keeps the site navigable: on a project page, the cards for that
+project's own publications ignore `project:` and link to each paper's own page,
+so nothing becomes unreachable by linking outward.
 
 ## Adding a news item
 
