@@ -19,14 +19,9 @@ Legend: **T** teaser · **P** paper link · **V** video · **C** code · **B** B
 ### 1. Coverage-Recon: Coordinated Multi-Drone Image Sampling with Online Map Feedback
 `_publications/2025-journal-hanif-coverage-recon.md` — *IEEE T-CST, under review*
 
-Currently: T ✅ (shared with the ECC paper) · P ❌ · V ✅ · C ❌ · B ✅ · PP ✅ (points at `map-feedback-coverage`)
-
-- [ ] Replace the teaser with a GIF specific to the journal version — it currently
-      reuses `portf_mfc_1.gif`, the same source as the ECC 2025 paper
-- [ ] Turn the linked project page into a real one rather than a stub: add video,
-      BibTeX, paper link and code
-- [ ] Add `paperurl:` once it is public
-- [ ] Add `code:` if the implementation is released
+**DONE.** Teaser now the multi-drone system animation from the official project
+page; authors corrected to the journal author list; arXiv paper, code, video and
+external project page linked; body written from the project page.
 
 ### 2. Angle-Aware Coverage with Camera Rotational Motion Control
 `_publications/2024-journal-lu-et-al.md` — *SICE JCMSI, 2024*
@@ -110,7 +105,9 @@ Currently: T ⚠️ (static `portf_haug_1.png`) · P ✅ · B ❌ · PP ✅
 
 ## Cross-cutting
 
-- [ ] **Shared teasers.** Five entries currently reuse a teaser from another
+- [x] ~~Coverage-Recon / ECC 2025 shared teaser~~ — resolved: Coverage-Recon now
+      uses its own animation, ECC keeps `portf_mfc_1`.
+- [ ] **Shared teasers.** Four entries currently reuse a teaser from another
       entry, so pairs of cards look near-identical: Coverage-Recon / ECC 2025
       (`portf_mfc_1.gif`), the vessel chapter / IFAC paper (`portf_ship_1.gif`),
       ECC 2022 / Solar Energy (`portf_la_africana_1.gif`). Two of these are
