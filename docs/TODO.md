@@ -26,9 +26,9 @@ external project page linked; body written from the project page.
 ### 2. Angle-Aware Coverage with Camera Rotational Motion Control
 `_publications/2024-journal-lu-et-al.md` — *SICE JCMSI, 2024*
 
-Currently: T ⚠️ (static `portf_aacc_2.png`) · P ✅ · V ❌ · C ❌ · B ✅ · PP ❌
+Currently: T ✅ (`angle_aware_illustration`, from the Coverage-Recon repo) · P ✅ · V ❌ · C ❌ · B ✅ · PP ❌
 
-- [ ] Replace the static PNG teaser with a GIF
+- [x] ~~Replace the static PNG teaser with a GIF~~
 - [ ] Add `video:`
 - [ ] Add `code:`
 - [ ] Create a project page for it and link both ways (`project:` here,
@@ -107,15 +107,12 @@ Currently: T ⚠️ (static `portf_haug_1.png`) · P ✅ · B ❌ · PP ✅
 
 - [x] ~~Coverage-Recon / ECC 2025 shared teaser~~ — resolved: Coverage-Recon now
       uses its own animation, ECC keeps `portf_mfc_1`.
-- [ ] **Shared teasers.** Four entries currently reuse a teaser from another
-      entry, so pairs of cards look near-identical: Coverage-Recon / ECC 2025
-      (`portf_mfc_1.gif`), the vessel chapter / IFAC paper (`portf_ship_1.gif`),
-      ECC 2022 / Solar Energy (`portf_la_africana_1.gif`). Two of these are
-      already differentiated by a hand-picked frame (`portf_mfc_1_alt.jpg`,
-      `portf_mfc_1_alt2.jpg`) — the same trick works for the rest if a distinct
-      source isn't available.
-- [ ] **Static teasers that could be GIFs.** `2024-journal-lu-et-al`,
-      `2018-paper-muzammil-et-al`, `2018-thesis-hanif-et-al`.
+- [ ] **Shared teasers.** Two entries still reuse a teaser from another entry:
+      the vessel chapter / IFAC paper (`portf_ship_1.gif`), and ECC 2022 /
+      Solar Energy (`portf_la_africana_1.gif`). The map-feedback cluster is
+      resolved — all three now have their own art.
+- [ ] **Static teasers that could be GIFs.** `2018-paper-muzammil-et-al`,
+      `2018-thesis-hanif-et-al`.
 - [ ] **No teaser at all.** `2026-paper-uto-brias`, `2025-paper-uto-epps`,
       `2025-paper-suenaga-et-al`, `2024-paper-lu-et-al`,
       `2023-paper-asavasirikulkij-et-al`, `2024-patent-robot-operation-system`,

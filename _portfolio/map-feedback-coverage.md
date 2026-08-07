@@ -1,5 +1,5 @@
 ---
-title: "Coverage-Recon: Multi-Drone Image Sampling with Online Map Feedback"
+title: "Multi-Drone Image Sampling with Online Map Feedback"
 collection: portfolio
 permalink: /portfolio/map-feedback-coverage/
 order: 1

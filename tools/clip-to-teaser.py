@@ -84,6 +84,10 @@ def main():
     ap.add_argument("--start", default="0", help="clip start, HH:MM:SS or seconds")
     ap.add_argument("--duration", type=float, default=6.0, help="clip length in seconds")
     ap.add_argument("--fps", type=int, default=10)
+    ap.add_argument("--speed", type=float, default=1.0,
+                    help="play back N times faster. Use to compress a long run "
+                         "into a short loop, e.g. --duration 26 --speed 4 shows "
+                         "the whole sequence in about 6 seconds.")
     ap.add_argument("--crop", help="W:H:X:Y applied before scaling")
     ap.add_argument("--thumb-at", type=float, default=0.0,
                     help="seconds into the clip to grab the still from")
@@ -113,11 +117,15 @@ def main():
     crop = f"crop={args.crop}," if args.crop else ""
     trim = ["-ss", str(args.start), "-t", str(args.duration)]
 
+    speed = f"setpts=PTS/{args.speed}," if args.speed != 1.0 else ""
+
     def vf(width, fps=None):
         f = f"{crop}scale={width}:-2:flags=lanczos"
-        return f"fps={fps},{f}" if fps else f
+        return f"{speed}fps={fps},{f}" if fps else f"{crop}scale={width}:-2:flags=lanczos"
 
-    print(f"clipping {args.duration}s from {args.start} at {args.fps} fps")
+    out_len = args.duration / args.speed
+    print(f"clipping {args.duration}s from {args.start} at {args.fps} fps"
+          + (f", sped up {args.speed}x -> {out_len:.1f}s loop" if args.speed != 1.0 else ""))
 
     # detail-page animation
     run([ffmpeg, "-y", "-loglevel", "error", *trim, "-i", src,
