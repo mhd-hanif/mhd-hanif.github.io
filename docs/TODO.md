@@ -92,12 +92,17 @@ No teaser, no project page — titles fall back to the papers' own pages.
 - [ ] Decide whether the hyperspectral work deserves a `_portfolio/` entry
 
 ### Gaussian-process data sampling (`2025-paper-suenaga-et-al`)
-T ✅ · P ❌ · B ✅ · PP ✅ · W ✅
+T ✅ · P ✅ · B ✅ · PP ✅ · W ✅
 - [x] ~~No teaser~~ — a frame from the hierarchical run
 - [x] ~~No project page~~ — `_portfolio/gp-environmental-sampling.md` created
-- [ ] **Add `paperurl:`.** The ECC 2025 proceedings are on IEEE Xplore but I have
-      no verified DOI for this paper, so nothing was guessed. Also missing the
-      page range.
+- [x] ~~Add `paperurl:`~~ — IEEE Xplore document 11187026
+- [ ] **BibTeX has no `doi:` or page range.** IEEE conference DOIs use the
+      document number as the suffix, so this one is almost certainly
+      `10.23919/ECC65951.2025.11187026` — matching the pattern of the other
+      ECC 2025 entry on this site (`…2025.11187242`, document 11187242). It was
+      left out rather than inferred, because a wrong DOI in BibTeX propagates
+      into other people's bibliographies. Confirm on the Xplore page and add it,
+      along with the page range.
 
 ### ECC 2022 moving tasks (`2022-paper-martin-et-al`)
 T ⚠️ — reuses `portf_la_africana_1.gif`, same source as the Solar Energy paper.

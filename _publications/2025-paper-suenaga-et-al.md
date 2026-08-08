@@ -11,6 +11,7 @@ project: "/portfolio/gp-environmental-sampling/"
 authors: "Masaya Suenaga, <span class=\"me\">Muhammad Hanif</span>, Kuniaki Uto, Takeshi Hatanaka"
 teaser: "/images/papers/gp-teaser.jpg"
 thumb: "/images/papers/gp-teaser.jpg"
+paperurl: "https://ieeexplore.ieee.org/abstract/document/11187026"
 bibtex: |
   @inproceedings{suenaga2025hierarchical,
     title     = {Hierarchical Multi-Robot Data Sampling for Environmental State Estimation through Online Gaussian Process},
