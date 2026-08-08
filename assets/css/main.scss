@@ -771,6 +771,21 @@ a.badge:hover { background: var(--accent); color: #fff; text-decoration: none; b
   font-style: italic;
 }
 
+/* "Part of <project>" -- the one place a publication points up at the project
+   it belongs to. Shown on the paper's own page only, never on a card. */
+.pub-parent {
+  margin: 2px 0 10px;
+  font-size: .855rem;
+  color: var(--text-muted);
+}
+.pub-parent a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-border);
+  padding-bottom: 1px;
+}
+.pub-parent a:hover { border-bottom-color: var(--accent); }
+
 .pub-links {
   display: flex;
   flex-wrap: wrap;

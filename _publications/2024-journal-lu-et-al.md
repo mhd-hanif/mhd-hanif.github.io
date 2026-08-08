@@ -3,7 +3,6 @@ title: "Angle-Aware Coverage with Camera Rotational Motion Control"
 collection: publications
 category: manuscripts
 permalink: /publication/2024-journal-lu-et-al
-project: "/portfolio/angle-aware-coverage/"
 date: 2024-06-01
 sortdate: 2024-06-01
 venue: "SICE Journal of Control, Measurement, and System Integration, 2024"

@@ -3,7 +3,6 @@ title: "Design and Development of Tube-Launched Unmanned Aerial Vehicle"
 collection: publications
 category: conferences
 permalink: /publication/2018-paper-muzammil-et-al
-project: "/portfolio/folding-wing-uav/"
 date: 2018-08-01
 sortdate: 2018-08-01
 venue: "International Conference on Intelligent Unmanned Systems (ICIUS), 2018"

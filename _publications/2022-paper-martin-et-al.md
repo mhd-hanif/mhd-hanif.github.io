@@ -3,7 +3,6 @@ title: "Predictive Receding-Horizon Multi-Robot Task Allocation with Moving Task
 collection: publications
 category: conferences
 permalink: /publication/2022-paper-martin-et-al
-project: "/portfolio/multi-robot-task-allocation-thermosolar/"
 date: 2022-07-12
 sortdate: 2022-07-12
 venue: "European Control Conference (ECC), 2022"

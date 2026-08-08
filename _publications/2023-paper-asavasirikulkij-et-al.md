@@ -7,7 +7,6 @@ date: 2023-03-13
 sortdate: 2023-03-13
 venue: "ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2023"
 venueshort: "HRI"
-project: "/portfolio/vr-swarm-interface/"
 authors: "Chanun Asavasirikulkij, <span class=\"me\">Muhammad Hanif</span>"
 note: "Companion proceedings, pp. 132–136."
 teaser: "/images/papers/vr-experiment.jpg"

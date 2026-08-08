@@ -3,8 +3,8 @@
 Working notes. This directory is excluded from the Jekyll build, so nothing
 here is published to the site.
 
-See [`CONTENT.md`](../CONTENT.md) for how to add a teaser and how publication
-titles are linked, and remember the build step:
+See [`CONTENT.md`](../CONTENT.md) for how to add a teaser and how projects and
+publications link to each other, and remember the build step:
 
 ```bash
 python3 tools/build-teasers.py
