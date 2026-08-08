@@ -1,0 +1,24 @@
+{% comment %}
+  The hero image at the top of a publication or project page.
+
+  `teaser:` is the original artwork and is often a multi-megabyte GIF, so it is
+  never what gets served: `motion` (an animated WebP, ~1/10 the weight) goes to
+  readers who have not asked for reduced motion, and `thumb` (a still) to
+  everyone else. Only entries with neither derivative fall back to the raw file.
+
+  Same source set the cards use -- see _includes/pub-card.html.
+{% endcomment %}
+{% assign fig = include.page %}
+{% if fig.teaser %}
+<figure class="page-figure">
+  {% assign still = fig.thumb | default: fig.teaser %}
+  {% if fig.motion %}
+  <picture>
+    <source srcset="{{ fig.motion | relative_url }}" type="image/webp" media="(prefers-reduced-motion: no-preference)">
+    <img src="{{ still | relative_url }}" alt="{{ fig.title | strip_html | escape }}" loading="lazy" decoding="async">
+  </picture>
+  {% else %}
+  <img src="{{ still | relative_url }}" alt="{{ fig.title | strip_html | escape }}" loading="lazy" decoding="async">
+  {% endif %}
+</figure>
+{% endif %}

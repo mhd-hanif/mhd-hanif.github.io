@@ -37,11 +37,7 @@ layout: default
       {% endif %}
     </header>
 
-    {% if page.teaser %}
-    <figure class="page-figure">
-      <img src="{{ page.teaser | relative_url }}" alt="{{ page.title | strip_html | escape }}" loading="lazy">
-    </figure>
-    {% endif %}
+    {% include page-figure.html page=page %}
 
     <div class="prose">
       {{ content }}

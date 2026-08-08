@@ -20,41 +20,79 @@ publications:
   - "/publication/2018-paper-muzammil-et-al"
 ---
 
-This project was undertaken as part of the Indonesia National Aerial Robotics Competition 2017, where we developed one of Indonesia's first Autonomous Folding-Wing UAVs (Unmanned Aerial Vehicles). Our innovation earned us the "Best Design" award and the title of "1st Runner-Up" in this prestigious competition.
+Most fixed-wing UAVs are awkward before they are useful. They fill a vehicle in transport. They need
+a runway or a dedicated launcher that has to be carried in, set up and taken down. And assembling one
+on site costs time you may not have — which in difficult terrain is the whole problem.
 
-Our aim was to develop a fixed-wing UAV that is compact, easily deployable, and optimized for operations in challenging terrains. To achieve this, we designed the UAV to be rapidly deployable within a short time frame. It is stored in a tube for easy transport, allowing for the simultaneous launch of multiple aircraft without the need for a runway. Additionally, we worked on developing a coordinated relay system to enable the control of multiple UAVs and extend their communication range.
+Built for the Indonesia National Aerial Robotics Competition 2017, this was one of Indonesia's first
+autonomous folding-wing UAVs. It took **Best Design** and **1st Runner-Up**.
 
-I was responsible for developing the avionics system of the UAV, ensuring that the electronics and control systems were seamlessly integrated to support autonomous flight and coordinated operations.
+<figure>
+  <img src="{{ '/images/portf_folding_wing_5.jpg' | relative_url }}" alt="The tube-launched folding-wing UAV" loading="lazy">
+</figure>
 
-<p align="center">
-  <img src='/images/portf_folding_wing_5.jpg' alt="Folding-Wing UAV"/>
-</p>
+## The idea
 
-## The Challenge
+Make the aircraft fit in a tube and fly straight out of it.
 
-### Issues with Conventional Fixed-Wing UAVs:
-- **Transport:** Most UAVs require large storage and transport space.
-- **Launch Requirements:** Traditional UAVs often need a runway or specialized launching gear, which must be set up and taken down on site.
-- **Communication Limitations:** UAV communication range is typically limited, especially in terrains with obstacles like hills.
+A **tandem wing** is what makes that possible — it buys lifting surface without any single long span,
+so the whole aircraft collapses into a cylinder roughly 5 inches across. Torsional springs deploy the
+wings on exit, and the aircraft transitions to autonomous flight at about 25 m/s.
 
-## Proposed Solution & Mechanism
+<figure>
+  <img src="{{ '/images/papers/tlu-folding.jpg' | relative_url }}" alt="The UAV in folded, transition and expanded configuration with dimensions marked" loading="lazy">
+  <figcaption>Folded, mid-transition, expanded.</figcaption>
+</figure>
 
-To address these challenges, our team developed a tube-launched folding-wing UAV with a coordinated relay system. The UAV can be stored in a tube, making it easy to carry and transport. The integrated pneumatic launch system simplifies deployment, minimizing setup time and effort. Additionally, the coordinated relay system extends the communication range by deploying multiple UAVs that can communicate with each other.
+Multiple aircraft can be launched at once from a pneumatic launcher, with no runway anywhere in the
+process. A coordinated relay system extends communication range by using the aircraft themselves as
+relays — the limitation that bites hardest in hilly terrain.
 
-<p align="center">
-  <img src='/images/portf_folding_wing_2.png' alt="Folding-Wing UAV Design"/>
-  <img src='/images/portf_folding_wing_3.png' alt="Folding-Wing UAV Schematic"/>
-  <img src='/images/portf_folding_wing_4.gif' alt="Folding-Wing UAV Animation"/>
-  <img src='/images/portf_folding_wing_1.gif' alt="Folding-Wing UAV Launch"/>
-  <img src='/images/portf_folding_wing_6.jpg' alt="Team Photo"/>
-</p>
+<figure>
+  <picture>
+    <source srcset="{{ '/images/motion/portf_folding_wing_1.webp' | relative_url }}" type="image/webp" media="(prefers-reduced-motion: no-preference)">
+    <img src="{{ '/images/thumbs/portf_folding_wing_1.jpg' | relative_url }}" alt="The UAV launching from the pneumatic tube and deploying its wings" loading="lazy">
+  </picture>
+  <figcaption>Launch and wing deployment.</figcaption>
+</figure>
 
-## References
+## My part
 
-- Muzammil, A. F., Rosid, N. H., **Hanif, M.**, Fadel, N., Nathan, S. T., Moelyadi, M. A., & Budiyono, A. (2018). Design and Development of Tube-Launched Unmanned Aerial Vehicle. In *International Conference on Intelligent Unmanned Systems, August*. Available at: [ResearchGate](https://www.researchgate.net/publication/327573471_Design_and_Development_of_Tube-Launched_Unmanned_Aerial_Vehicle)
+I built the **avionics system** — a Pixhawk flight controller on a 4S 6200 mAh LiPo, brushless DC
+propulsion, and two separate radio links so flight data and pilot command never contend. Power
+distribution between the autopilot and the actuators is deliberately split, keeping back-EMF from the
+servos off the flight controller.
 
-- Rosid, N. H., Lukman, E. I., Fadlillah, M. A., & Moelyadi, M. A. (2018). Aerodynamic Characteristics of Tube-Launched Tandem Wing Unmanned Aerial Vehicle. In Journal of Physics: Conference Series, 1005(1), 012015. IOP Publishing. Available at: [IOPscience](https://iopscience.iop.org/article/10.1088/1742-6596/1005/1/012015/pdf)
+<figure>
+  <img src="{{ '/images/papers/tlu-layout.jpg' | relative_url }}" alt="Cutaway of the internal layout showing payload, battery, system box, speed controller, folding mechanism and motor" loading="lazy">
+  <figcaption>Everything stacks along the tube axis, which is the real constraint on where anything can go.</figcaption>
+</figure>
 
-- **Video** - A video demonstration of the UAV in action, showcasing the tube launch and relay system : 
+## Flight testing
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NfwVMHj_P-g?si=gZuKpRzwp3mTGmU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figure>
+  <img src="{{ '/images/papers/tlu-flight.jpg' | relative_url }}" alt="The tandem-wing UAV in flight over a field" loading="lazy">
+</figure>
+
+From the flight controller logs: 100 km/h maximum airspeed, 150 m/min climb rate, roughly 45 km/h
+stall at 3 kg, about 160 m maximum relative altitude, and a longest autonomous flight of 26 minutes.
+
+Autonomous mode flew badly at first — the guidance was unstable. The logs showed target bearing and
+actual nav bearing diverging sharply, because the aircraft is far more agile than the stock navigation
+parameters assume. Retuning them fixed it. The unconventional configuration caused the problem and
+the flight data is what made it visible.
+
+<figure>
+  <img src="{{ '/images/portf_folding_wing_6.jpg' | relative_url }}" alt="The team at the Indonesia National Aerial Robotics Competition" loading="lazy">
+  <figcaption>The team, with Aksantara UAV at ITB.</figcaption>
+</figure>
+
+## Video
+
+<iframe src="https://www.youtube.com/embed/NfwVMHj_P-g" title="Tube-launched folding-wing UAV" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Related reading
+
+Rosid, N. H., Lukman, E. I., Fadlillah, M. A., & Moelyadi, M. A. (2018). Aerodynamic Characteristics
+of Tube-Launched Tandem Wing Unmanned Aerial Vehicle. *Journal of Physics: Conference Series*,
+1005(1), 012015. [IOPscience](https://iopscience.iop.org/article/10.1088/1742-6596/1005/1/012015/pdf)
