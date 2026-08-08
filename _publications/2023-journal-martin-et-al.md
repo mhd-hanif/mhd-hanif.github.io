@@ -78,6 +78,11 @@ so drift in the cloud-velocity estimate gets corrected without waiting for a com
 LP transformation rests on approximations whose accuracy decays along the horizon, and the underlying
 problem is strongly nonlinear.
 
+<figure>
+  <img src="{{ '/images/papers/mrta-horizon.jpg' | relative_url }}" alt="Mean cost and computation time against allocation horizon length K" loading="lazy">
+  <figcaption>Cost against horizon length. The minimum sits at K = 3–4, and computation time climbs steadily beyond it — so a longer horizon costs more and delivers less.</figcaption>
+</figure>
+
 **Against a genetic algorithm.** At K = 4, PMRTA solved 828 of 1000 problems against the GA's 596. Of
 the 574 both could solve, PMRTA won 709 times and the GA 118. Overall the paper reports **38.92% more
 problems solved** and a win in **85.73%** of cases where both produced an answer.

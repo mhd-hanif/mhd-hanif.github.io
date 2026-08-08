@@ -80,8 +80,13 @@ A3-size printed car, accelerating from 0.1 to 0.3 m/s over about two minutes.
 </figure>
 
 <figure>
+  <img src="{{ '/images/papers/trk-experiment-without.jpg' | relative_url }}" alt="Snapshots of the experiment without the adaptation algorithm, drone camera view inset" loading="lazy">
+  <figcaption>Without adaptation. The camera inset holds a clean detection through 50 s; by 65 s the target is sliding out of frame, and at 80 s the inset shows bare floor.</figcaption>
+</figure>
+
+<figure>
   <img src="{{ '/images/papers/trk-experiment-with.jpg' | relative_url }}" alt="Snapshots of the experiment with the adaptation algorithm, showing the drone camera view and the coverage state" loading="lazy">
-  <figcaption>The run with adaptation, drone camera inset. The coloured field is the coverage state; the drone stays with the target as it speeds up.</figcaption>
+  <figcaption>With adaptation. The coloured field is the coverage state; the drone stays with the target as it speeds up.</figcaption>
 </figure>
 
 The altitude set is discretised here, and target speed is sampled at four values. Extending both to
