@@ -3,7 +3,6 @@ title: "Angle-Aware Full 3D Coverage Control with ADMM-based Dynamic Assignment 
 collection: publications
 category: conferences
 permalink: /publication/2024-paper-lu-et-al
-project: "/portfolio/angle-aware-coverage/"
 date: 2024-08-27
 sortdate: 2024-08-27
 venue: "SICE Annual Conference, 2024"

@@ -1,11 +1,17 @@
 {% assign pub = include.pub %}
 {% comment %}
-  Where the title and the teaser image lead:
-    - the publication's project page when it has one -- an official external
-      page if set, otherwise the portfolio entry on this site
-    - the publication's own page when it has neither, or when this card is
-      already being rendered on its project page (hide_project)
-  The "Project Page" chip points at the same place, so the two never disagree.
+  Where the title and the teaser image lead.
+
+  A publication card leads to that publication -- its own page on this site.
+  It never leads up to the `_portfolio/` project the paper belongs to: that
+  relationship runs one way only, with the project page listing its papers.
+  A reader clicking a paper wants the paper.
+
+  The single exception is an official project page published elsewhere (an
+  absolute URL in `project:`). Those carry the full video set, so the title
+  opens them instead, and a "Project Page" chip makes the jump explicit.
+  On the project page itself (hide_project) even those link to the paper's
+  own page, so nothing on this site becomes unreachable.
 {% endcomment %}
 {% comment %}
   Reset first: Liquid variables persist across iterations of the surrounding
@@ -13,13 +19,12 @@
   treated as external.
 {% endcomment %}
 {% assign pub_external = false %}
-{% if pub.project and include.hide_project != true %}
+{% if pub.project contains "://" and include.hide_project != true %}
+  {% assign pub_external = true %}
   {% assign pub_target = pub.project %}
-  {% if pub.project contains "://" %}{% assign pub_external = true %}{% endif %}
 {% else %}
-  {% assign pub_target = pub.url %}
+  {% assign pub_target = pub.url | relative_url %}
 {% endif %}
-{% unless pub_external %}{% assign pub_target = pub_target | relative_url %}{% endunless %}
 
 <article class="pub-card">
   <div class="pub-media">
@@ -57,7 +62,8 @@
 
     <div class="pub-links">
       {% if pub.paperurl %}<a class="btn" href="{{ pub.paperurl }}" target="_blank" rel="noopener">Paper</a>{% endif %}
-      {% unless include.hide_project %}{% if pub.project %}{% if pub_external %}<a class="btn" href="{{ pub.project }}" target="_blank" rel="noopener">Project Page</a>{% else %}<a class="btn" href="{{ pub.project | relative_url }}">Project Page</a>{% endif %}{% endif %}{% endunless %}
+      {% comment %}Only an official page published elsewhere earns a chip -- the link up to a `_portfolio/` project lives on the paper's own page instead.{% endcomment %}
+      {% if pub_external %}<a class="btn" href="{{ pub.project }}" target="_blank" rel="noopener">Project Page</a>{% endif %}
       {% if pub.code %}<a class="btn" href="{{ pub.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
       {% if pub.video %}<a class="btn" href="{{ pub.video }}" target="_blank" rel="noopener">Video</a>{% endif %}
       {% if pub.slides %}<a class="btn" href="{{ pub.slides | relative_url }}" target="_blank" rel="noopener">Slides</a>{% endif %}

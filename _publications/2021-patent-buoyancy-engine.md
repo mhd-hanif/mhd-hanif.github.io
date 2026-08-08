@@ -3,7 +3,6 @@ title: "Buoyancy Engine using Fluid Bags on a Hybrid Autonomous Underwater Glide
 collection: publications
 category: patents
 permalink: /publication/2021-patent-buoyancy-engine
-project: "/portfolio/hybrid-autonomous-underwater-glider/"
 date: 2021-04-13
 sortdate: 2021-04-13
 venue: "Indonesia Patent No. P00202102652, 2021"

@@ -3,7 +3,6 @@ title: "Multi-Drone Coordinated Image Sampling for 3D Map Reconstruction through
 collection: publications
 category: thesis
 permalink: /publication/2025-thesis-hanif-phd
-project: "/portfolio/angle-aware-coverage/"
 date: 2025-07-01
 sortdate: 2025-07-01
 venue: "Ph.D. Dissertation, Institute of Science Tokyo, 2025"

@@ -3,7 +3,6 @@ title: "Feedback-Based Coverage Control Using Reconstructed Models from Real-Tim
 collection: publications
 category: domestic
 permalink: /publication/2025-domestic-sumino-msc
-project: "/portfolio/map-feedback-coverage/"
 date: 2025-03-01
 sortdate: 2025-03-01
 venue: "12th SICE Control Division Multi-Symposium, Osaka, 2025"

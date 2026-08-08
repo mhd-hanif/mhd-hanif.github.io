@@ -3,7 +3,6 @@ title: "Hierarchical Vessel Autonomous Operation in a Port with Safety Certifica
 collection: publications
 category: conferences
 permalink: /publication/2023-paper-otsuki-et-al
-project: "/portfolio/safe-autonomous-ship-control/"
 date: 2023-07-09
 sortdate: 2023-07-09
 venue: "IFAC World Congress, 2023"

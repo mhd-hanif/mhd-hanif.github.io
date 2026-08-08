@@ -7,7 +7,6 @@ date: 2025-06-24
 sortdate: 2025-06-23
 venue: "European Control Conference (ECC), 2025"
 venueshort: "ECC"
-project: "/portfolio/gp-environmental-sampling/"
 authors: "Masaya Suenaga, <span class=\"me\">Muhammad Hanif</span>, Kuniaki Uto, Takeshi Hatanaka"
 teaser: "/images/papers/gp-teaser.jpg"
 thumb: "/images/papers/gp-teaser.jpg"

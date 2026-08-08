@@ -3,7 +3,6 @@ title: "Design and Implementation of Control System in Hybrid Underwater Glider 
 collection: publications
 category: thesis
 permalink: /publication/2018-thesis-hanif-et-al
-project: "/portfolio/hybrid-autonomous-underwater-glider/"
 date: 2018-07-01
 sortdate: 2018-07-01
 venue: "B.Sc. Thesis, Bandung Institute of Technology, 2018"
