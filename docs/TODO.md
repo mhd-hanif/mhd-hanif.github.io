@@ -32,21 +32,21 @@ a PDF.
 | Automatic Diabetic Retinopathy Classification (TENCON 2020) | DR Screening — rewritten | 1 |
 | Brain Tumor Classification Using CNN (WC 2018) | Brain Tumour Classifier — rewritten | 3 |
 | Design and Development of Tube-Launched UAV (ICIUS 2018) | Folding-Wing UAV — rewritten | 3 |
+| Predictive Receding-Horizon MRTA… Thermosolar (Solar Energy 2023) | MRTA Thermosolar — rewritten | 5 |
+| Predictive Receding-Horizon MRTA with Moving Tasks (ECC 2022) | MRTA Thermosolar | — |
+| Hierarchical Multi-Robot Data Sampling… Online GP (ECC 2025) | **new** — GP Environmental Sampling | 4 + teaser |
+
+The ECC 2022 paper is written as the predecessor of the journal version — the
+journal paper states exactly what it added, so the relationship is sourced even
+without the ECC PDF.
 
 ### Waiting on a paper
 
-- [ ] **Predictive Receding-Horizon MRTA… Thermosolar Power Plant** —
-      `2023-journal-martin-et-al` *(Solar Energy, 2023)*
-- [ ] **Predictive Receding-Horizon MRTA with Moving Tasks** —
-      `2022-paper-martin-et-al` *(ECC, 2022)*
 - [ ] **Hierarchical Vessel Autonomous Operation in a Port** —
-      `2023-paper-otsuki-et-al` *(IFAC, 2023)*
-- [ ] **Hierarchical Multi-Robot Data Sampling… Online Gaussian Process** —
-      `2025-paper-suenaga-et-al` *(ECC, 2025)*
+      `2023-paper-otsuki-et-al` *(IFAC, 2023)*. Has a project page already
+      (`safe-autonomous-ship-control`) to hang the content on.
 
-The first three already have project pages to hang the content on
-(`multi-robot-task-allocation-thermosolar`, `safe-autonomous-ship-control`).
-The Gaussian-process paper still has none — see below.
+That is the last of the twelve.
 
 ---
 
@@ -92,13 +92,19 @@ No teaser, no project page — titles fall back to the papers' own pages.
 - [ ] Decide whether the hyperspectral work deserves a `_portfolio/` entry
 
 ### Gaussian-process data sampling (`2025-paper-suenaga-et-al`)
-No teaser, no project page.
-- [ ] Teaser
-- [ ] A project page would cover this one — nothing on the site does today
+T ✅ · P ❌ · B ✅ · PP ✅ · W ✅
+- [x] ~~No teaser~~ — a frame from the hierarchical run
+- [x] ~~No project page~~ — `_portfolio/gp-environmental-sampling.md` created
+- [ ] **Add `paperurl:`.** The ECC 2025 proceedings are on IEEE Xplore but I have
+      no verified DOI for this paper, so nothing was guessed. Also missing the
+      page range.
 
 ### ECC 2022 moving tasks (`2022-paper-martin-et-al`)
 T ⚠️ — reuses `portf_la_africana_1.gif`, same source as the Solar Energy paper.
-- [ ] Give one of the two its own art
+W ✅ (written as the predecessor of the journal version).
+- [ ] Give one of the two its own art. The journal paper's Gazebo and
+      La Africana figures are now on the journal page, so the shared GIF is
+      less conspicuous — but they are still the same image.
 
 ### Tube-launched UAV (`2018-paper-muzammil-et-al`)
 T ⚠️ (static) · P ✅ · PP ✅ · W ✅
@@ -115,18 +121,17 @@ T ⚠️ (static `portf_haug_1.png`) · P ✅ · B ❌ · PP ✅
 ## Cross-cutting
 
 - [x] ~~Coverage-Recon / ECC 2025 shared teaser~~ — resolved.
-- [x] ~~Publications with no project page~~ — down from 4 to 3
-      (`2026-paper-uto-brias`, `2025-paper-uto-epps`,
-      `2025-paper-suenaga-et-al`). Two new `_portfolio/` entries would clear it:
-      one for hyperspectral rice, one for GP environmental sampling.
+- [x] ~~Publications with no project page~~ — down from 4 to 2, both
+      hyperspectral rice (`2026-paper-uto-brias`, `2025-paper-uto-epps`). One
+      new `_portfolio/` entry would clear it.
 - [ ] **Shared teasers.** Two pairs remain: vessel chapter / IFAC paper
       (`portf_ship_1.gif`), and ECC 2022 / Solar Energy
       (`portf_la_africana_1.gif`).
 - [ ] **Static teasers that could move.** `2018-paper-muzammil-et-al`,
       `2018-thesis-hanif-et-al`.
 - [ ] **No teaser at all.** `2026-paper-uto-brias`, `2025-paper-uto-epps`,
-      `2025-paper-suenaga-et-al`, `2024-patent-robot-operation-system`,
-      `2022-thesis-hanif-et-al`.
+      `2024-patent-robot-operation-system`. Cards falling back to a bare venue
+      label are down from 6 to 3.
 - [ ] **Video links.** Several CV entries carry a [Video] tag that the site
       does not reflect — worth reconciling in one pass.
 - [ ] **Page weight.** `images/portf_folding_wing_0.gif` and `_1.gif` are ~11 MB
