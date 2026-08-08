@@ -3,6 +3,7 @@ title: "Real-Time Optimization for Dynamic Multiple Target Allocation and Tracki
 collection: publications
 category: thesis
 permalink: /publication/2022-thesis-hanif-et-al
+project: "/portfolio/multi-robot-task-allocation-thermosolar/"
 date: 2022-08-01
 sortdate: 2022-08-01
 venue: "M.Eng. Thesis, Tokyo Institute of Technology, 2022"

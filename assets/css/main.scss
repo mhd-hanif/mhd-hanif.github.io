@@ -428,6 +428,22 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.25; font-weight: 600; }
 .prose ul, .prose ol { margin: 0 0 1.05em; padding-left: 1.25em; }
 .prose li { margin-bottom: .35em; }
 .prose img { border-radius: var(--radius); margin: 1.4em 0; }
+
+/* Figures from papers: the images are mostly white-background diagrams, so they
+   get a hairline to sit on rather than bleeding into the page. */
+.prose figure { margin: 1.6em 0; }
+.prose figure img {
+  margin: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--border);
+}
+.prose figcaption {
+  margin-top: .55em;
+  font-size: .875rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
 .prose blockquote {
   margin: 1.4em 0;
   padding: 2px 0 2px 16px;
@@ -1032,7 +1048,9 @@ a.row-title:hover { color: var(--accent); text-decoration: none; }
   overflow: hidden;
   background: var(--bg-sunken);
 }
-.page-figure img { width: 100%; }
+.page-figure img { width: 100%; display: block; }
+/* <picture> is only a source selector here -- it must not become a layout box. */
+.page-figure picture { display: contents; }
 
 /* =========================================================================
    Contact & footer
