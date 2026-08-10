@@ -1,4 +1,8 @@
 ---
+# Hidden until the patent application is publicly available. Delete this line
+# (or set it to true) to put it back — nothing else needs changing. The related
+# project _portfolio/equipment-inspection-task-allocation.md is hidden with it.
+published: false
 title: "Robot Operation System"
 collection: publications
 category: patents

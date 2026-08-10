@@ -1,4 +1,8 @@
 ---
+# Hidden while the underlying US patent application is still under review and
+# not publicly available. Delete this line (or set it to true) to restore it,
+# along with the same line in _publications/2024-patent-robot-operation-system.md.
+published: false
 title: "Multi-Robot Task Allocation for Equipment Inspection"
 collection: portfolio
 permalink: /portfolio/equipment-inspection-task-allocation/
