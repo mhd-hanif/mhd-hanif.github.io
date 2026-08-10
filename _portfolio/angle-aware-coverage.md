@@ -1,5 +1,5 @@
 ---
-title: "Angle-Aware Coverage Control for Large-Scale Map Reconstruction"
+title: "Angle-Aware Coverage Control for 3D Map Reconstruction"
 collection: portfolio
 permalink: /portfolio/angle-aware-coverage/
 order: 2
