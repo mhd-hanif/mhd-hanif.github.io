@@ -8,6 +8,8 @@ sortdate: 2025-10-01
 venue: "European Plant Phenomics Symposium (EPPS), 2025"
 venueshort: "EPPS"
 authors: "Kuniaki Uto, <span class=\"me\">Muhammad Hanif</span>, Shunsuke Takahashi, Masaki Takahashi, Koji Yoshi, Takeshi Hatanaka"
+teaser: "/images/thumbs/conf-epps.jpg"
+thumb: "/images/thumbs/conf-epps.jpg"
 bibtex: |
   @inproceedings{uto2025hyperspectral,
     title     = {Hyperspectral Data-Based Growth State Estimation of Rice Plants Cultivated in Closed Plant Factories with Artificial Lighting},
