@@ -15,6 +15,7 @@ note: "pp. 144–155. Open access."
 paperurl: "https://www.tandfonline.com/doi/pdf/10.1080/18824889.2024.2346375"
 video: "https://www.youtube.com/watch?v=vk7a_vR_kTw"
 featured: true
+featured_order: 2
 bibtex: |
   @article{hanif2024angleaware,
     title   = {Efficient Angle-Aware Coverage Control for Large-Scale Map Reconstruction using Drone Networks},

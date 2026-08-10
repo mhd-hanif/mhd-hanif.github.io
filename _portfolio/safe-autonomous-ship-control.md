@@ -15,6 +15,7 @@ tags:
   - "MPC"
   - "Control Barrier Functions"
 featured: true
+featured_order: 3
 redirect_from:
   - /portfolio/3_safe%20autonomous_ship_control/
 publications:

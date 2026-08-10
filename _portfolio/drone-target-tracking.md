@@ -14,7 +14,6 @@ tags:
   - "TensorFlow"
   - "Coverage Control"
   - "Object Detection"
-featured: true
 redirect_from:
   - /portfolio/2_drone_target_tracking/
 publications:

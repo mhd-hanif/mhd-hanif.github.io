@@ -15,7 +15,6 @@ thumb: "/images/thumbs/portf_mfc_1.jpg"
 motion: "/images/motion/portf_mfc_1.webp"
 paperurl: "https://ieeexplore.ieee.org/document/11187242"
 video: "https://www.youtube.com/watch?v=ZhDbBBvplhY"
-featured: true
 bibtex: |
   @inproceedings{hanifimpact2025,
     author    = {Hanif, Muhammad and Sumino, Takumi and Uto, Kuniaki and Ichihashi, Daisuke and Cheng, Kelvin and Hatanaka, Takeshi},

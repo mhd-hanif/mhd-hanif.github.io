@@ -13,6 +13,7 @@ motion: "/images/motion/portf_la_africana_1.webp"
 thumb: "/images/thumbs/portf_la_africana_1.jpg"
 paperurl: "https://www.sciencedirect.com/science/article/abs/pii/S0038092X23005443"
 featured: true
+featured_order: 4
 bibtex: |
   @article{martin2023predictive,
     title   = {Predictive receding-horizon multi-robot task allocation applied to the mapping of direct normal irradiance in a thermosolar power plant},

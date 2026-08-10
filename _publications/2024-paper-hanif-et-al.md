@@ -14,7 +14,6 @@ motion: "/images/motion/portf_target_tracking_1.webp"
 thumb: "/images/thumbs/portf_target_tracking_1.jpg"
 paperurl: "https://paperhost.org/proceedings/controls/SICE24/files/0252.pdf"
 video: "https://youtube.com/playlist?list=PLhkfvyrPMk0y9SuYD3R4zjezj0KI69-Rn"
-featured: true
 bibtex: |
   @inproceedings{hanif2024realtime,
     title     = {Real-time Adaptation of Drone Altitude and Object Detection Model for Moving Target Tracking},

@@ -13,6 +13,8 @@ teaser: "/images/safe_vessel.gif"
 motion: "/images/motion/portf_vessel_safe.webp"
 thumb: "/images/thumbs/portf_vessel_safe.jpg"
 paperurl: "https://link.springer.com/chapter/10.1007/978-3-031-82681-8_16"
+featured: true
+featured_order: 3
 bibtex: |
   @incollection{otsuki2025hierarchical,
     title     = {Hierarchical Vessel Safe Operation in a Port through CBF, MPC and RRT-like Spatiotemporal Path Planning},

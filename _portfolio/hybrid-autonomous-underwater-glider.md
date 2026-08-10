@@ -12,6 +12,8 @@ tags:
   - "C++"
   - "Python"
   - "Waypoint Tracking"
+featured: true
+featured_order: 6
 redirect_from:
   - /portfolio/5_haug/
 publications:

@@ -16,6 +16,7 @@ tags:
   - "Control Barrier Functions"
   - "JAX"
 featured: true
+featured_order: 2
 video: "https://www.youtube.com/watch?v=vk7a_vR_kTw"
 redirect_from:
   - /portfolio/1_2_angle-aware-coverage/

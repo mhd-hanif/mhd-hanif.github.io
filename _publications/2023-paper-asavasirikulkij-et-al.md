@@ -13,6 +13,8 @@ teaser: "/images/vr_drone.gif"
 motion: "/images/motion/portf_vr_1.webp"
 thumb: "/images/thumbs/portf_vr_1.jpg"
 paperurl: "https://dl.acm.org/doi/10.1145/3568294.3580057"
+featured: true
+featured_order: 5
 bibtex: |
   @inproceedings{asavasirikulkij2023human,
     title     = {Human Workload Evaluation of Drone Swarm Formation Control using Virtual Reality Interface},

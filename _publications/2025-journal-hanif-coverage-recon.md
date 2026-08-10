@@ -18,6 +18,7 @@ paperurl: "https://arxiv.org/pdf/2510.18347"
 code: "https://github.com/htnk-lab/coverage-recon"
 video: "https://www.youtube.com/watch?v=M1L07WQFRPI"
 featured: true
+featured_order: 1
 bibtex: |
   @article{hanif2025coverage,
     title   = {Coverage-Recon: Coordinated Multi-Drone Image Sampling with Online Map Feedback},

@@ -14,6 +14,7 @@ tags:
   - "Fixed-Wing"
   - "Relay Network"
 featured: true
+featured_order: 5
 redirect_from:
   - /portfolio/9_3_folding-wing-uav/
 publications:

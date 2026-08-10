@@ -15,6 +15,7 @@ tags:
   - "Python"
   - "Task Allocation"
 featured: true
+featured_order: 4
 redirect_from:
   - /portfolio/4_multi_robot_task_allocation_thermo/
 publications:

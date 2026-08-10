@@ -18,6 +18,7 @@ tags:
 code: "https://github.com/htnk-lab/coverage-recon"
 video: "https://www.youtube.com/watch?v=M1L07WQFRPI"
 featured: true
+featured_order: 1
 redirect_from:
   - /portfolio/1_1_map-feedback-coverage/
 publications:

@@ -96,7 +96,12 @@ layout: default
 </section>
 {% endif %}
 
-{% assign projects = site.portfolio | where: "featured", true | sort: "order" %}
+{% comment %}
+  Homepage curation is deliberately separate from the listing pages: `featured_order`
+  fixes the sequence here, while `order` still drives /portfolio/ and the publications
+  page still sorts by date. Every item with `featured: true` needs a `featured_order`.
+{% endcomment %}
+{% assign projects = site.portfolio | where: "featured", true | sort: "featured_order" %}
 {% if projects.size > 0 %}
 <section class="section" id="projects">
   <div class="wrap">
@@ -111,7 +116,7 @@ layout: default
 </section>
 {% endif %}
 
-{% assign featured = site.publications | where: "featured", true | sort: "sortdate" | reverse %}
+{% assign featured = site.publications | where: "featured", true | sort: "featured_order" %}
 {% if featured.size > 0 %}
 <section class="section" id="publications">
   <div class="wrap">
