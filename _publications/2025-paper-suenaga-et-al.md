@@ -8,8 +8,9 @@ sortdate: 2025-06-23
 venue: "European Control Conference (ECC), 2025"
 venueshort: "ECC"
 authors: "Masaya Suenaga, <span class=\"me\">Muhammad Hanif</span>, Kuniaki Uto, Takeshi Hatanaka"
-teaser: "/images/papers/gp-teaser.jpg"
-thumb: "/images/papers/gp-teaser.jpg"
+teaser: "/images/gp_coverage.gif"
+motion: "/images/motion/portf_gp_1.webp"
+thumb: "/images/thumbs/portf_gp_1.jpg"
 paperurl: "https://ieeexplore.ieee.org/abstract/document/11187026"
 bibtex: |
   @inproceedings{suenaga2025hierarchical,

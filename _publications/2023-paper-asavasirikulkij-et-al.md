@@ -9,8 +9,9 @@ venue: "ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2023
 venueshort: "HRI"
 authors: "Chanun Asavasirikulkij, <span class=\"me\">Muhammad Hanif</span>"
 note: "Companion proceedings, pp. 132–136."
-teaser: "/images/papers/vr-experiment.jpg"
-thumb: "/images/papers/vr-experiment.jpg"
+teaser: "/images/vr_drone.gif"
+motion: "/images/motion/portf_vr_1.webp"
+thumb: "/images/thumbs/portf_vr_1.jpg"
 paperurl: "https://dl.acm.org/doi/10.1145/3568294.3580057"
 bibtex: |
   @inproceedings{asavasirikulkij2023human,

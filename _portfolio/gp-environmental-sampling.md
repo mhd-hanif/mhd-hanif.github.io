@@ -4,8 +4,9 @@ collection: portfolio
 permalink: /portfolio/gp-environmental-sampling/
 order: 6
 summary: "Estimating a scalar field — soil chemistry, irradiance, water quality — from readings a robot team takes at discrete points, with a Gaussian process saying where the estimate is still weakest and a two-layer controller getting the robots there."
-teaser: "/images/papers/gp-teaser.jpg"
-thumb: "/images/papers/gp-teaser.jpg"
+teaser: "/images/gp_coverage.gif"
+motion: "/images/motion/portf_gp_1.webp"
+thumb: "/images/thumbs/portf_gp_1.jpg"
 period: "2024 – 2025"
 tags:
   - "Gaussian Processes"

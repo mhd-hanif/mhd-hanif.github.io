@@ -4,8 +4,9 @@ collection: portfolio
 permalink: /portfolio/vr-swarm-interface/
 order: 8
 summary: "Flying a drone swarm from inside a VR headset, with formation control holding the shape and a control barrier function keeping it safe — and a measurement of what that interface actually costs the operator."
-teaser: "/images/papers/vr-experiment.jpg"
-thumb: "/images/papers/vr-experiment.jpg"
+teaser: "/images/vr_drone.gif"
+motion: "/images/motion/portf_vr_1.webp"
+thumb: "/images/thumbs/portf_vr_1.jpg"
 period: "2022"
 tags:
   - "ROS"
