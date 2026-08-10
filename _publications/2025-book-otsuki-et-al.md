@@ -9,9 +9,10 @@ venue: "Nonlinear and Constrained Control — Springer Nature, 2025"
 venueshort: "Springer"
 authors: "Satoshi Otsuki, Naoki Hatta, <span class=\"me\">Muhammad Hanif</span>, Riku Funada, Kenichi Nakashima, Takeshi Hatanaka"
 note: "Book chapter, pp. 407–441. E. Garone, I. V. Kolmanovsky and T. W. Nguyen (eds)."
-teaser: "/images/portf_ship_1.gif"
-motion: "/images/motion/portf_ship_1.webp"
-thumb: "/images/thumbs/portf_ship_1.jpg"
+teaser: "/images/safe_vessel.gif"
+motion: "/images/motion/portf_vessel_safe.webp"
+thumb: "/images/thumbs/portf_vessel_safe.jpg"
+paperurl: "https://link.springer.com/chapter/10.1007/978-3-031-82681-8_16"
 bibtex: |
   @incollection{otsuki2025hierarchical,
     title     = {Hierarchical Vessel Safe Operation in a Port through CBF, MPC and RRT-like Spatiotemporal Path Planning},
