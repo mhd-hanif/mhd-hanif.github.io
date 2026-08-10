@@ -15,7 +15,7 @@ contact_text: >-
 
 I'm currently a Robotics Control Engineer at [DeepX](https://deepx.co.jp/) in Tokyo, developing coordinated
 planning methods for [autonomous construction
-machinery](https://www.deepx.co.jp/cases/pneumatic_caisson_solution/). My current work focuses on
+machinery](https://www.deepx.co.jp/solution/cases/). My current work focuses on
 enabling multiple autonomous excavators to collaborate safely and efficiently during excavation operations.
 
 Previously, I completed my Ph.D. and M.Eng. in Systems and Control Engineering at the
