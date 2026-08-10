@@ -31,24 +31,6 @@ layout: default
   </div>
 </section>
 
-{% if site.data.stack %}
-<section class="section section-tight" id="stack">
-  <div class="wrap">
-    <h2 class="section-title">Research &amp; Technical Skills</h2>
-    <ul class="stack-list">
-      {% for group in site.data.stack %}
-      <li class="stack-group">
-        <span class="stack-label">{{ group.label }}</span>
-        <span class="stack-items">
-          {% for item in group.items %}<span class="chip">{{ item }}</span>{% endfor %}
-        </span>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
-{% endif %}
-
 {% if site.data.affiliations %}
 <section class="section section-tight" id="affiliations">
   <div class="wrap">
@@ -67,6 +49,24 @@ layout: default
           {% if af.role %}<span class="affiliation-role">{{ af.role }}</span>{% endif %}
           <span class="affiliation-years">{{ af.years }}</span>
         {% if af.url %}</a>{% else %}</div>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+{% if site.data.stack %}
+<section class="section section-tight" id="stack">
+  <div class="wrap">
+    <h2 class="section-title">Research &amp; Technical Skills</h2>
+    <ul class="stack-list">
+      {% for group in site.data.stack %}
+      <li class="stack-group">
+        <span class="stack-label">{{ group.label }}</span>
+        <span class="stack-items">
+          {% for item in group.items %}<span class="chip">{{ item }}</span>{% endfor %}
+        </span>
       </li>
       {% endfor %}
     </ul>
