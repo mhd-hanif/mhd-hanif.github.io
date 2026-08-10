@@ -27,12 +27,16 @@ layout: default
         The `publications:` lists are the authoritative record of the
         relationship, and going this way round also covers the papers whose
         `project:` holds an external URL -- they still belong to a project here.
+
+        A paper can belong to more than one project -- a thesis spanning two
+        threads of work, say -- so every match is listed, not just the first.
       {% endcomment %}
-      {% assign parent = nil %}
-      {% for proj in site.portfolio %}
-        {% if proj.publications contains page.permalink %}{% assign parent = proj %}{% break %}{% endif %}
-      {% endfor %}
-      {% if parent %}<p class="pub-parent">Part of <a href="{{ parent.url | relative_url }}">{{ parent.title }}</a></p>{% endif %}
+      {% assign parents = site.portfolio | where_exp: "proj", "proj.publications contains page.permalink" %}
+      {% if parents.size > 0 %}
+      <p class="pub-parent">Part of
+        {% for parent in parents %}<a href="{{ parent.url | relative_url }}">{{ parent.title }}</a>{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
+      </p>
+      {% endif %}
 
       <div class="pub-links">
         {% if page.paperurl %}<a class="btn" href="{{ page.paperurl }}" target="_blank" rel="noopener">Paper</a>{% endif %}

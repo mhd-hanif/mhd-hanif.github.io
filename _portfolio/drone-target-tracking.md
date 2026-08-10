@@ -19,6 +19,7 @@ redirect_from:
   - /portfolio/2_drone_target_tracking/
 publications:
   - "/publication/2024-paper-hanif-et-al"
+  - "/publication/2022-thesis-hanif-et-al"
 ---
 
 Persistent coverage control can send a drone to patrol a field and hold watch on whatever it finds

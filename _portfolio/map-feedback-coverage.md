@@ -24,6 +24,7 @@ publications:
   - "/publication/2025-journal-hanif-coverage-recon"
   - "/publication/2025-paper-hanif-et-al"
   - "/publication/2025-domestic-sumino-msc"
+  - "/publication/2025-thesis-hanif-phd"
 ---
 
 Reconstructing a scene in 3D from the air is limited less by the reconstruction algorithm than by the
