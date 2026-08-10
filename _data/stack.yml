@@ -12,8 +12,9 @@
 
 - label: "Robot Platforms"
   items:
-    - "Multirotor & Fixed-Wing UAVs"
-    - "Hybrid VTOL"
+    - "Multirotor UAV"
+    - "Fixed-Wing UAV"
+    - "Hybrid VTOL UAV"
     - "UGVs"
     - "Underwater Gliders & AUVs"
     - "Autonomous Vessels"
@@ -25,9 +26,8 @@
     - "Control Barrier Functions"
     - "Distributed Optimisation"
     - "Path Planning"
-    - "NeRF"
     - "3D Gaussian Splatting"
-    - "Photogrammetry"
+    - "3D Reconstruction Photogrammetry"
     - "Object Detection"
 
 - label: "Frameworks"
@@ -40,6 +40,9 @@
     - "OpenCV"
     - "CUDA"
     - "MATLAB / Simulink"
+    - "Docker"
+    - "Git"
+    - "Linux"
 
 - label: "Languages"
   items:
@@ -55,6 +58,8 @@
     - "Pixhawk / ArduPilot"
     - "Mission Planner"
     - "Raspberry Pi"
+    - "Microcontroller"
+    - "Single Board Computer"
     - "Arduino"
     - "BeagleBone"
     - "Altium / Eagle"
