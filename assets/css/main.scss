@@ -21,7 +21,10 @@
 
   --text:          #16202e;
   --text-muted:    #5b6675;
-  --text-faint:    #808b9a;
+  /* 4.60:1 on white. The old #808b9a measured 3.46:1, under the 4.5:1 WCAG AA
+     floor for body-size text -- and this colour carries real content: page
+     ranges, "Under review", equal-contribution notes. Same hue, darker. */
+  --text-faint:    #6b7686;
 
   --accent:        #1f5fd0;
   --accent-hover:  #17489e;

@@ -75,6 +75,10 @@ exclude:
   - CONTENT.md
   - docs
   - tools
+  # GitHub Pages turns any stray Markdown into a page, headings and all, so
+  # this maintenance note was being published at /images/logos/ and listed in
+  # the sitemap.
+  - images/logos/README.md
 keep_files:
   - .git
 
