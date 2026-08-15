@@ -1,0 +1,87 @@
+{% comment %}
+  JSON-LD structured data.
+
+  Two shapes, emitted only where each applies:
+
+    Person          on the homepage. The `sameAs` list is what lets Google
+                    treat the Scholar profile, ORCID record, GitHub account
+                    and LinkedIn page as one person rather than four
+                    unrelated pages -- the prerequisite for a knowledge panel.
+
+    ScholarlyArticle on each publication page.
+
+  Every string goes through `jsonify`, which emits its own quotes and escapes
+  the contents. Titles here contain em-dashes, quotes and HTML spans, so
+  hand-quoting would eventually produce invalid JSON.
+{% endcomment %}
+
+{% assign a = site.author %}
+
+{% if page.url == '/' %}
+{% assign topics = '' | split: '' %}
+{% for group in site.data.stack %}
+  {% if group.label == 'Research Topics' or group.label == 'Methods' %}
+    {% assign topics = topics | concat: group.items %}
+  {% endif %}
+{% endfor %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ a.name | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }},
+  "image": {{ '/images/' | append: a.avatar | absolute_url | jsonify }},
+  "jobTitle": {{ a.tagline | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "worksFor": {
+    "@type": "Organization",
+    "name": {{ a.affiliation | jsonify }},
+    "url": {{ a.affiliation_url | jsonify }}
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Institute of Science Tokyo", "url": "https://www.isct.ac.jp/en" },
+    { "@type": "CollegeOrUniversity", "name": "Bandung Institute of Technology", "url": "https://www.itb.ac.id/" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tokyo",
+    "addressCountry": "JP"
+  },
+  "knowsAbout": {{ topics | jsonify }},
+  "sameAs": [
+    {{ a.googlescholar | jsonify }},
+    {{ a.orcid | jsonify }},
+    {{ a.researchgate | jsonify }},
+    {{ a.github | jsonify }},
+    {{ a.linkedin | jsonify }}
+  ]
+}
+</script>
+{% endif %}
+
+{% if page.collection == 'publications' %}
+{% comment %}
+  `authors` is a display string carrying markup and, on equal-contribution
+  papers, asterisks. Strip both before splitting, or the JSON ends up with
+  authors named "Muhammad Hanif*".
+{% endcomment %}
+{% assign author_list = page.authors | strip_html | replace: '*', '' | split: ', ' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": {{ page.title | strip_html | jsonify }},
+  "name": {{ page.title | strip_html | jsonify }},
+  "author": [
+    {% for name in author_list %}{ "@type": "Person", "name": {{ name | strip | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "datePublished": {{ page.date | date: '%Y-%m-%d' | jsonify }},
+  {% if page.venue %}"isPartOf": { "@type": "CreativeWork", "name": {{ page.venue | jsonify }} },{% endif %}
+  {% if page.paperurl %}"sameAs": {{ page.paperurl | jsonify }},{% endif %}
+  "url": {{ page.url | absolute_url | jsonify }},
+  "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
+  "inLanguage": "en"
+}
+</script>
+{% endif %}

@@ -35,6 +35,7 @@
 
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 {% feed_meta %}
+{% include structured-data.html %}
 
 {% if page.mathjax %}
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']]}};</script>
