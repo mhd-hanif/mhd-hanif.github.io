@@ -109,4 +109,29 @@
       link.setAttribute('aria-current', 'page');
     }
   });
+
+  /* ---- Count CV opens -------------------------------------------------- */
+  /* A page view says someone arrived; a CV open says they were interested,
+     which is the more useful signal on a portfolio. Recorded as a GoatCounter
+     event so it lands beside the page list rather than looking like a page.
+
+     Everything here is conditional on window.goatcounter existing, so nothing
+     happens on local builds -- where the counter script is not emitted at all
+     -- or for readers who block it. The link is never interfered with: the
+     event is fired and the browser follows the href as normal.
+
+     Restricted to PDFs hosted here. Publication "Paper" chips also end in
+     .pdf, but they are somebody else's file on somebody else's domain, and
+     they arrive named things like 0252.pdf -- nothing worth a row. */
+  doc.addEventListener('click', function (e) {
+    var link = e.target.closest ? e.target.closest('a[href$=".pdf"]') : null;
+    if (!link || link.hostname !== window.location.hostname) { return; }
+    if (!window.goatcounter || typeof window.goatcounter.count !== 'function') { return; }
+    var file = (link.getAttribute('href') || '').split('/').pop();
+    window.goatcounter.count({
+      path:  'download/' + file,
+      title: 'PDF opened: ' + file,
+      event: true
+    });
+  });
 })();

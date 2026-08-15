@@ -50,3 +50,18 @@
     }
   })();
 </script>
+
+{% comment %}
+  Visitor counting. No cookies and no persistent identifier, so no consent
+  banner is required. The dashboard is private, at
+  https://mhd-hanif.goatcounter.com
+
+  Emitted only on production builds: GitHub Pages sets JEKYLL_ENV=production,
+  a local `jekyll build` does not, so local work never reaches the counter.
+  count.js also declines to report from localhost on its own, which covers the
+  case of serving a production build locally to check something.
+{% endcomment %}
+{% if jekyll.environment == "production" %}
+<script data-goatcounter="https://mhd-hanif.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+{% endif %}
