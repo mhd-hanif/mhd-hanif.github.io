@@ -9,7 +9,7 @@ robots: "noindex, nofollow"
 draft: true
 ---
 
-> **Draft — unlisted.** This page is not linked anywhere on the site and is not in the sitemap. Please do not share it yet until early 2027. Lines marked **[TODO]** still need my check.
+> **Draft — unlisted.** This page is not linked anywhere on the site and is not in the sitemap. Please do not share it yet until early 2027.
 
 Some friends asked me how the process for getting an academic position in Japan looks like, and one of them suggested me to just write it down. So here it is. I try to write it honestly, including the parts where I was not so sure about myself. Hopefully this can be useful for someone who is in the same position as me before, especially for international students who finished their Ph.D. in Japan and are thinking about academia.
 
@@ -33,7 +33,7 @@ Some small tips about JREC-IN:
 
 ## Preparing the application documents
 
-This part took the longest time for me. I worked on it mostly on weekends and evenings for around two months, since I still have my full-time job. **[TODO: adjust how long it actually took]**
+This part took the longest time for me. I worked on it mostly on weekends and evenings for around two weeks, since I still have my full-time job.
 
 For this position, the application was one combined document. The structure I submitted was like this:
 
@@ -63,7 +63,7 @@ Some things I learned while writing them:
 
 ## Passing the document screening
 
-In July 2026 I got an email that my application passed the document screening, and I was invited for an interview. Alhamdulillah, I was really happy reading that email. **[TODO: exact date]**
+In July 2026 I got an email that my application passed the document screening, and I was invited for an interview. Alhamdulillah, I was really happy reading that email.
 
 The interview format was:
 
@@ -74,7 +74,7 @@ It was mainly in person at the university, but online was also possible if reque
 
 ## The interview
 
-The interview was in **[TODO: August 10 or August 31, 2026; in person or online]**. There were five professors from the department in the committee.
+The interview was on August 31, 2026. There were five professors from the department in the committee.
 
 For the 20 minutes, I divided the presentation roughly like this:
 
@@ -83,8 +83,6 @@ For the 20 minutes, I divided the presentation roughly like this:
 3. Other collaborative projects with academia and industry.
 4. My research direction and plan if I join the department, and how it connects to the department.
 5. Short part about teaching and how I want to run the lab.
-
-**[TODO: what kind of questions were asked, as far as it's okay to share — e.g. about research plan, funding, collaboration, teaching, student supervision]**
 
 A few things that helped me:
 
@@ -95,9 +93,9 @@ A few things that helped me:
 
 ## The offer, and deciding
 
-Some time after the interview, I was informed that I was accepted, and I needed to decide whether to take it or not. **[TODO: date]**
+Some time after the interview, I was informed that I was accepted, and I needed to decide whether to take it or not.
 
-It was not a very easy decision. I like my work at DeepX, the team is great, and the problems are real. But I thought again about why I wanted this in the first place: to teach, to work with students, and to build a research group that connects theory and real-world robotics. In the end I decided to accept, and I will start in **April 2027**. **[TODO: anything else you want to share about the decision]**
+It was not a very easy decision. I like my work at DeepX, the team is great, and the problems are real. But I thought again about why I wanted this in the first place: to teach, to work with students, and to build a research group that connects theory and real-world robotics. In the end I decided to accept, and I will start in **April 2027**.
 
 ## If you are thinking to apply
 
