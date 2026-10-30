@@ -10,6 +10,7 @@
 <meta name="description" content="{{ page_desc | strip_newlines | strip }}">
 <meta name="author" content="{{ site.author.name }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
+{% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
 
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:type" content="{% if page.collection %}article{% else %}website{% endif %}">
