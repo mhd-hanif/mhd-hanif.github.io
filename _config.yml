@@ -99,6 +99,11 @@ collections:
     permalink: /:collection/:path/
 
 defaults:
+  # Unlisted shared files: keep out of the sitemap
+  - scope:
+      path: "share"
+    values:
+      sitemap: false
   - scope:
       path: ""
       type: pages
